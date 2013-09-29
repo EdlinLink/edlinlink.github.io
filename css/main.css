@@ -191,8 +191,10 @@ ul.posts span {
 }
 
 .site .meta {
+  display: inline-block;
   color: #aaa;
 }
+
 
 .site .footer {
   font-size: 85%;
@@ -205,6 +207,7 @@ ul.posts span {
 .site .footer .contact {
   float: left;
   margin-right: 3em;
+  text-align: left;
 }
 
 .site .footer .contact a {

@@ -3,8 +3,12 @@ layout: post
 title:  "String Matching"
 date:   2013-09-22 00:00:00
 categories: algorithm
+
 ---
 
+
+String Matching
+------------------
 
 字符串匹配是一个很常见的问题：
 
