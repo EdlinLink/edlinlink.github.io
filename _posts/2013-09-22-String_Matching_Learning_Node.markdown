@@ -2,8 +2,7 @@
 layout: post
 title:  "String Matching"
 date:   2013-09-22 00:00:00
-categories: algorithm
-
+myTag: 	algorithm
 ---
 
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "Graphviz Learning Note"
 date:   2013-09-21 00:00:00
-categories: software
+myTag: software
 
 ---
 
@@ -41,12 +41,12 @@ dot文件是用dot语言编写的文件，简单明了，编写方法可以参�
 
 	dot -Tjpg test.dot -o test.jpg
 
-![test.jpg](./picture/Graphviz_Learning_Note-1.jpg)
+![test.jpg](../picture/Graphviz_Learning_Note-1.jpg)
 
 当然根据不同的dot文件可以画很多不同的图，例如：
 
-![hash.jpg](./picture/Graphviz_Learning_Note-2.jpg)
-![binarytree.jpg](./picture/Graphviz_Learning_Note-3.jpg)
+![hash.jpg](../picture/Graphviz_Learning_Note-2.jpg)
+![binarytree.jpg](../picture/Graphviz_Learning_Note-3.jpg)
 
 graphviz支持最终保存成很多种格式，我们可以通过调整参数`-Tjpg`来实现最终的不同格式：
 
@@ -66,5 +66,5 @@ graphviz支持最终保存成很多种格式，我们可以通过调整参数`-T
 
 最后放上一张用graphviz画的facebook中100人的关系图：
 
-![fb.jpg](./picture/Graphviz_Learning_Note-4.jpg)
+![fb.jpg](../picture/Graphviz_Learning_Note-4.jpg)
 
