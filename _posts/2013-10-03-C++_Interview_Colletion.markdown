@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  ""
+title:  "C++ Interview Collection 2011"
 date:   2013-10-03 00:00:00
-myTag:	c++ algorithm
+myTag:	c++
 
 ---
 
