@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  ""
+title:  "Shell 十三问"
 date:   2013-10-05 00:00:00
 myTag:	shell
 
