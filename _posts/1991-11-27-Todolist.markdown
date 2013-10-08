@@ -14,6 +14,7 @@ myTag:
 + Convex Optimization
 + <del> 把时间当作朋友 - 李笑来 <del> (2013.09.24)
 + 奇特的一生 - [苏]格拉宁 
++ The Meaning of Life - [英]特里.伊格尔顿
 
 ## Tech
 + MNIST 运用
@@ -24,7 +25,7 @@ myTag:
 + <del> Reverse Index <del> (2013.10.04)
 + Python Graph
 + <del> Graphviz <del> (2013.09.21)
-+ Shell 13 Questions
++ <del> Shell 13 Questions <del> (2013.10.08)
 + <del> KMP Algorithm <del> (2013.09.22)
 + MPI
 + Red Black Tree
