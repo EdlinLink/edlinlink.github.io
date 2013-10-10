@@ -2,7 +2,8 @@
 layout: post
 title:  "Todolist"
 date:   1991-11-27 00:00:00
-myTag:	
+myTag:
+
 ---
 
 
@@ -32,6 +33,8 @@ myTag:
 + SVT
 + Sum-Product Network
 + <del> C++面试宝典2011 <del> (2013.10.04)
++ MathJax
++ RAS MD5
 
 ## Proj
 + <del> construct Edlin's Blog <del> (2013.10.05)

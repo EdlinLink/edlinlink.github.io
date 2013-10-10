@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "MPI Learning Note"
+title:  "MPI Learning Note (updat: 10 Oct)"
 date:   2013-10-08 00:00:00
 myTag:	mpi
 
@@ -241,6 +241,8 @@ MPI_GET_PROCESSOR_NAME调用返回进程所在机器的名字。
 
 ### 数据接力传递
 
+<center> ![数据接力传递示例图](../picture/MPI_Learning_Note-1.png)</center>
+
 	#include <stdio.h>
 	#include "mpi.h"
 	int main(int argc, char* argv[]){
@@ -310,4 +312,123 @@ MPI_GET_PROCESSOR_NAME调用返回进程所在机器的名字。
 
 需要说明一下上面这个例子的`MPI_Barrier`函数表示`阻止调用直到communicator中所有进程完成调用`。也即是`进程0`会等到`进程6`调用完之后再继续执行。(因为本例子共有7个进程)
 
+### 任意进程间问候
 
+<center> ![任意进程间问候示例图](../picture/MPI_Learning_Note-2.png)</center>
+		
+	#include "mpi.h"
+	#include <stdio.h>
+	#include <stdlib.h>
+
+	void Hello(void);
+
+	int main(int argc, char *argv[]){
+		
+		int me, option, namelen, size;
+		char processor_name[MPI_MAX_PROCESSOR_NAME];
+		MPI_Init(&argc, &argv);
+		MPI_Comm_rank(MPI_COMM_WORLD, &me);
+		MPI_Comm_size(MPI_COMM_WORLD, &size);
+
+		if(size < 2){
+			fprintf(stderr, "systest requires at least 2 processes");
+			MPI_Abort(MPI_COMM_WORLD, 1);
+		}
+
+		MPI_Get_processor_name(processor_name, &namelen);
+		fprintf(stderr, "Process %d is alive on %s\n", me, processor_name);
+		MPI_Barrier(MPI_COMM_WORLD);
+
+		Hello();
+
+		MPI_Finalize();
+	}
+
+
+	void Hello(void){
+		int nproc, me;
+		int type = 1;
+		int buffer[2], node;
+		MPI_Status status;
+		MPI_Comm_rank(MPI_COMM_WORLD, &me);
+		MPI_Comm_size(MPI_COMM_WORLD, &nproc);
+
+		if(me==0){
+			printf("\nHello test from all to all\n");
+			fflush(stdout);
+		}
+
+		for(node=0; node<nproc; node++){
+			if(node!=me){
+				buffer[0] = me;
+				buffer[1] = node;
+
+				MPI_Send(buffer, 2, MPI_INT, node, type, MPI_COMM_WORLD);
+				MPI_Recv(buffer, 2, MPI_INT, node, type, MPI_COMM_WORLD, &status);
+
+				if((buffer[0]!=node) ){
+					(void)fprintf(stderr, "Hello: %d!=%d or %d!=%d\n", buffer[0], node, buffer[1], me);
+					printf("Mismatch on hello process ids; node = %d\n", node);
+				}
+				printf("Hello from %d to %d\n", me, node);
+				fflush(stdout);
+			}
+		}
+	}
+
+用3个进程执行上面这个例子，得到如下输出：
+
+	Process 0 is alive on Edlin-Mac.local
+	Process 1 is alive on Edlin-Mac.local
+	Process 2 is alive on Edlin-Mac.local
+
+	Hello test from all to all
+	Hello from 0 to 1
+	Hello from 0 to 2
+	Hello from 1 to 0
+	Hello from 2 to 0
+	Hello from 2 to 1
+	Hello from 1 to 2
+
+
+### 任意源和任意标识的使用
+
+<center> ![任意源和任意标识的使用示例图](../picture/MPI_Learning_Note-3.png)</center>
+	
+	#include "mpi.h"
+	#include <stdio.h>
+
+	int main(int argc, char* argv[]){
+
+		int rank, size, i, buf[1];
+		MPI_Status status;
+		MPI_Init(&argc, &argv);
+		MPI_Comm_rank(MPI_COMM_WORLD, &rank);
+		MPI_Comm_size(MPI_COMM_WORLD, &size);
+
+		if(rank==0){
+			for(i=0; i<100*(size-1); i++){
+				MPI_Recv(buf, 1, MPI_INT, MPI_ANY_SOURCE, MPI_ANY_TAG, MPI_COMM_WORLD, &status);
+				printf("Msg=%d from %d with tag %d\n", buf[0], status.MPI_SOURCE, status.MPI_TAG);
+			}
+		}
+		else{
+			for(i=0; i<100; i++){
+				buf[0]=rank+1;
+			MPI_Send(buf, 1, MPI_INT, 0, i, MPI_COMM_WORLD);
+			}
+		}
+		MPI_Finalize();
+	}
+
+
+***如果你已经看到这里了，表示你已经懂得MPI的基本使用方法了。下面我们将进入学习MPI的另一个阶段。***
+
+
+
+
+
+## MPI并行程序的两种基本模式
+
+1. 对等模式: 每个进程都是同等重要，一个进程从另外几个进程得到返回数据。  
+2. 主从模式: 有一个主进程，主进程分配任务给各个其它进程，其它进程返回计算结果给主进程。例如矩阵相乘。
