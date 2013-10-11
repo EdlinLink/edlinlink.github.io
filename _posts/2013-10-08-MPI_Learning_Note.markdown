@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "MPI Learning Note (updat: 10 Oct)"
+title:  "MPI Learning Note (update: Oct 10)"
 date:   2013-10-08 00:00:00
 myTag:	mpi
 
@@ -422,9 +422,7 @@ MPI_GET_PROCESSOR_NAME调用返回进程所在机器的名字。
 	}
 
 
-***如果你已经看到这里了，表示你已经懂得MPI的基本使用方法了。下面我们将进入学习MPI的另一个阶段。***
-
-
+***如果你已经看到这里了，表示你已经懂得MPI的基本使用方法了。下面我们将进入学习MPI的下一个问题。***
 
 
 
@@ -432,3 +430,64 @@ MPI_GET_PROCESSOR_NAME调用返回进程所在机器的名字。
 
 1. 对等模式: 每个进程都是同等重要，一个进程从另外几个进程得到返回数据。  
 2. 主从模式: 有一个主进程，主进程分配任务给各个其它进程，其它进程返回计算结果给主进程。例如矩阵相乘。
+
+## 不同的通信模式
+
+MPI提供了四种通信机制，我们之前所有的例子都是基于`标准通信模式(standard mode)`，其它的三种分别是`缓存通信模式(buffered-mode)`，`同步通信模式(synchronous-mode)`和`就绪通信模式(ready-mode)`。
+
+MPI通信模式：  
++ 标准通信模式	MPI_SEND	MPI_RECV  
++ 缓存通信模式	MPI_BSEND  
++ 同步通信模式	MPI_SSEND  
++ 就绪通信模式	MPI_RSEND  
+
+### 标准通信模式
+
+MPI的标准通信模式中，是否对所发送的数据进行缓存是由MPI自身来决定，而不是由程序员决定的。例如：
+
+1. 进程0发送消息(不依赖接收进程) --> 缓存消息 --> 缓存完毕 --> 发送完成  
+2. 进程0发送消息(依赖接收进程) --> 不缓存消息 --> 直接发送 --> [进程1接收消息 --> 开始接收 --> 全部接收] --> 发送完成  
+
+由于缓存数据是会延长数据通信时间，而且缓冲区也并不是总可以得到的，这样MPI也可以不缓存将要发出的数据，这样只有当相应的接收调用被执行之后，并且发送数据完全到达接收缓冲区后，发送操作才算完成。对于非阻塞通信，发送操作虽然没有完成，但是发送调用可以正确返回，程序可以接下来执行其它操作。
+
+### 缓存通信模式
+
+在缓存通信模式下，用户可以直接对通信缓冲区进行申请、使用和释放，因为，缓存模式下对通信缓冲区的合理和正确使用是由程序设计人员自己保证的。
+
+	MPI_BSEND(buf, count, datatype, dest, tag, comm)
+		IN	buf			发送缓冲区的起始地址(可选数据类型)	
+		IN	count		发送数据的个数(整型)
+		IN	datatype	发送数据的数据类型(句柄)
+		IN	dest		目标进程标识号(整数)
+		IN	tag			消息标志(整型)
+		IN	comm		通信域(句柄)
+	int MPI_Bsend(void* buf, int count, MPI_Datatype datatype, int dest, int tag, MPI_Comm comm)
+	MPI_BSEND(BUF, COUNT, DATATYPE, DEST, TAG, COMM, IERROR)
+		<type> BUF(*)
+		INTEGER COUNT, DATATYPE, DEST, TAG, COMM, IERROR
+
+采用缓存通信模式，消息发送是否能够进行以及正确返回，完全依赖于是否有足够的通信缓冲区可用。当缓存发送并返回后，并不意味着该缓冲区可以自由使用，只是当缓冲区的消息发送出去后，才可以释放该缓冲区。
+
+用户可以首先申请缓冲区，然后将它提交给MPI作为发送缓存，用于支持发送进程的缓存通信模式。这样，当缓存通信方式发生，MPI就可以使用蛇蝎缓冲区对消息进行缓存。当不使用这些缓冲区时，可以将它们释放。
+
+	MPI_BUFFER_ATTACH(buffer, size)
+		IN	buffer		初始缓存地址(可选数据类型)
+		IN	size		按字节计数的缓存跨度(整型)
+	int MPI_Buffer_attach(void* buffer, int size)
+	MPI_BUFFER_ATTACH(BUFFER, SIZE, IERROR)
+		<type> BUFFER(*)
+		INTEGER SIZE, IERROR
+
+`MPI_BUFFER_ATTACH`将大小为size的缓冲区提交给MPI，这样该缓冲区就可以作为发送时的缓存来使用。
+
+	MPI_BUFFER_DETACH(buffer, size)
+		OUT	buffer		缓冲区初始地址(可选数据类型)
+		OUT	size		以字节为单位的缓冲区大小(整型)
+	int MPI_Buffer_detach(void** buffer, int* size)
+	MPI_BUFFER_DETACH(BUFFER, SIZE, IERROR)
+		<type> BUFFER(*)
+		INTEGER SIZE, IERROR
+
+`MPI_BUFFER_DETACH`将提交的大小为size的缓冲区buffer收回。该调用是阻塞调用，它一直等到该缓存的消息发送完毕后才返回。这一调用返回后用户可以重新使用该缓冲区或将这一缓冲区释放。
+
+
