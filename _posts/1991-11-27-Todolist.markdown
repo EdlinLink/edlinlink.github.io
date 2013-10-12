@@ -35,6 +35,7 @@ myTag:
 + <del> C++面试宝典2011 <del> (2013.10.04)
 + MathJax
 + RAS MD5
++ LD algorithm
 
 ## Proj
 + <del> construct Edlin's Blog <del> (2013.10.05)

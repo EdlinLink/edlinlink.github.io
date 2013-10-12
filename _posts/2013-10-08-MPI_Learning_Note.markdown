@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "MPI Learning Note (update: Oct 10)"
+title:  "MPI Learning Note (update: Oct 12)"
 date:   2013-10-08 00:00:00
 myTag:	mpi
 
@@ -490,4 +490,39 @@ MPI的标准通信模式中，是否对所发送的数据进行缓存是由MPI�
 
 `MPI_BUFFER_DETACH`将提交的大小为size的缓冲区buffer收回。该调用是阻塞调用，它一直等到该缓存的消息发送完毕后才返回。这一调用返回后用户可以重新使用该缓冲区或将这一缓冲区释放。
 
+### 同步通信模式
 
+	MPI_SSEND(buf, datatype, dest, tag, comm)
+		IN	buf			发送缓冲区的起始地址(可选数据类型)	
+		IN	count		发送数据的个数(整型)
+		IN	datatype	发送数据的数据类型(句柄)
+		IN	dest		目标进程标识号(整数)
+		IN	tag			消息标志(整型)
+		IN	comm		通信域(句柄)
+	int MPI_Ssend(void* buf, int count, MPI_Datatype, int dest, int tag, MPI_Comm comm)
+	MPI_SSEND(BUF, COUNT, DATATYPE, DEST, TAG, COMM, IERROR)
+		<type> BUF(*)
+		INTEGER COUNT, DATATYPE, DEST, TAG, COMM, IERROR
+
+同步通信模式的开始不依赖于接收进程相应的接艘操作是否已经启动，但是同步发送取必须等到相应的接收进程开始孩子后才能正确返回。因此，同步发送返回后，意味着发送缓冲区中的数据已经完全被系统缓冲区缓存，并且已经开始发送。这样当同步发送返回后，发送缓冲区可以被释放或重新使用。
+
+### 就绪通信模式
+
+	MPI_SSEND(buf, datatype, dest, tag, comm)
+		IN	buf			发送缓冲区的起始地址(可选数据类型)	
+		IN	count		发送数据的个数(整型)
+		IN	datatype	发送数据的数据类型(句柄)
+		IN	dest		目标进程标识号(整数)
+		IN	tag			消息标志(整型)
+		IN	comm		通信域(句柄)
+	int MPI_Ssend(void* buf, int count, MPI_Datatype, int dest, int tag, MPI_Comm comm)
+	MPI_SSEND(BUF, COUNT, DATATYPE, DEST, TAG, COMM, IERROR)
+		<type> BUF(*)
+		INTEGER COUNT, DATATYPE, DEST, TAG, COMM, IERROR
+
+在就绪通信模式中，只有当接收进程的操作已经启动时，才可以在发送进程启动发送操作，否则当发送操作启动而相应的接收还没有启动时，发送操作将出错。对于非阻塞发送操作的正确返回，并不意味着发送已经完成，但对于阻塞发送的正确返回，则发送缓冲区可以重复使用。
+
+
+标准通信模式之外的通信模式是MPI提供给程序员的附加的并行程序通信手段，它要求程序员要有更好的更精确的理解，在此基础上，根据不同的需要，使用不同的通信模式，可以达到优化和提高效率的目的。
+
+至此，你已经了解了MPI的基本使用方法，如果想要继续深入学习，可以继续参考清华大学`都志辉`老师的《高性能计算之并行编程技术——MPI并行程序设计》一书。: )
