@@ -36,8 +36,8 @@ A = a1a2a3...an, 表示A由a1a2a3...an这N个字符组成，Len(A)=N
 B = b1b2b3...bm, 表示B由b1b2b3...bm这N个字符组成，Len(B)=M  
 
 对于1<=i<=N, 1<=j<=M, 有公式：  
-若ai==bj, 则LD(i,j)=LD(i-1,j-1)  
-若ai!=bj, 则LD(i,j)=Min(LD(i-1,j-1), LD(i-1,j), LD(i,j-1))+1  
+`若ai==bj, 则LD(i,j)=LD(i-1,j-1)`  
+`若ai!=bj, 则LD(i,j)=Min(LD(i-1,j-1), LD(i-1,j), LD(i,j-1))+1`  
 
 举个例子：A=GGATCGA, B=GAATTCAGTTA, 计算LD(A,B).
 
@@ -60,14 +60,14 @@ B = b1b2b3...bm, 表示B由b1b2b3...bm这N个字符组成，Len(B)=M
 第四步：根据回溯路径，写出匹配字串
 
 若回溯到左上角单元格，将ai添加到匹配字串A，将bj添加到匹配字串B  
-若回溯到上边单元格，将ai添加到匹配字串A，将_添加到匹配字串B  
-若回溯到左边单元格，将_添加到匹配字串A，将bj添加到匹配字串B  
+若回溯到上边单元格，将ai添加到匹配字串A，将\_添加到匹配字串B  
+若回溯到左边单元格，将\_添加到匹配字串A，将bj添加到匹配字串B  
 
 <center>![](../picture/LD_Algorithm-4.png)</center>
 
 最终得到：
 
-A：GGA_TC_G__A  
+A：GGA\_TC\_G__A  
 B：GAATTCAGTTA  
 
 
