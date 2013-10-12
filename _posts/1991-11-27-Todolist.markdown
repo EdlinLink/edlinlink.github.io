@@ -16,6 +16,7 @@ myTag:
 + <del> 把时间当作朋友 - 李笑来 <del> (2013.09.24)
 + 奇特的一生 - [苏]格拉宁 
 + The Meaning of Life - [英]特里.伊格尔顿
++ 编程之美
 
 ## Tech
 + MNIST 运用

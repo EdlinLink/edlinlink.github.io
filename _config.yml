@@ -1,4 +1,4 @@
 name: Edlin's Blog
-markdown: kramdown
+markdown: redcarpet
 pygments: true
 permalink: none
