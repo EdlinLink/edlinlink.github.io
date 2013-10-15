@@ -13,8 +13,8 @@ myTag:
 + 推荐系统实践 - 项亮
 + My Country and My People - 林语堂
 + Convex Optimization
-+ <del> 把时间当作朋友 - 李笑来 <del> (2013.09.24)
-+ 奇特的一生 - [苏]格拉宁 
++ <del> 把时间当作朋友 - 李笑来 (2013.09.24) </del>
++ <del> 奇特的一生 - [苏]格拉宁 (2013.10.15) </del>
 + The Meaning of Life - [英]特里.伊格尔顿
 + 编程之美
 
@@ -24,25 +24,31 @@ myTag:
 + Deep Learning Tutorial
 + Weibo Spider
 + Map Reduce
-+ <del> Reverse Index <del> (2013.10.04)
++ <del> Reverse Index (2013.10.04) </del>
 + Python Graph
-+ <del> Graphviz <del> (2013.09.21)
-+ <del> Shell 13 Questions <del> (2013.10.08)
-+ <del> KMP Algorithm <del> (2013.09.22)
++ <del> Graphviz (2013.09.21) </del>
++ <del> Shell 13 Questions (2013.10.08) </del>
++ <del> KMP Algorithm (2013.09.22) </del>
 + MPI
 + Red Black Tree
 + SVT
 + Sum-Product Network
-+ <del> C++面试宝典2011 <del> (2013.10.04)
-+ MathJax
++ <del> C++面试宝典2011 (2013.10.04) </del>
++ <del> MathJax (2013.10.13) </del>
 + RAS MD5
-+ LD algorithm
++ <del> LD algorithm (2013.10.13) </del>
++ C++ Multi-thread
++ C++ Network Programming
 
 ## Proj
-+ <del> construct Edlin's Blog <del> (2013.10.05)
-+ <del> purchase domain name <del> (2013.10.05)
++ <del> construct Edlin's Blog (2013.10.05) </del>
++ <del> purchase domain name (2013.10.05) </del>
 + construct Edlin & Abby Blog
 
 ## Futher
 + 工作第一份工资请爸爸妈妈吃饭
 + 捐助视障学校的学生
+
+## Want
++ 古老的打字机(就是觉得好玩而已)
++ 白色方方正正的书架(结实、比我高、耐用)
