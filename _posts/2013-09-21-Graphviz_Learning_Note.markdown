@@ -1,7 +1,8 @@
 ---
 layout: post
 title:  "Graphviz Learning Note"
-date:   2013-09-21 00:00:00
+date:   2013-09-21 12:00:00
+tags:	tech
 myTag: 	software
 
 ---

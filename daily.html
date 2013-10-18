@@ -3,10 +3,10 @@ layout: default
 title: Edlin's Blog
 ---
 
-<div id="archive">
-  <h1>Archive</h1>
+<div id="daily">
+  <h1>Daily</h1>
   <ul class="posts">
-    {% for post in site.tags.tech %}
+    {% for post in site.tags.daily %}
       <li><a href="{{ post.url }}">{{ post.title }}</a> - <span>{{ post.date | date_to_string }}</span></li>
 	{% endfor %}
   </ul>

@@ -1,7 +1,8 @@
 ---
 layout: post
 title:  "MPI Learning Note (update: Oct 12)"
-date:   2013-10-08 00:00:00
+date:   2013-10-08 12:00:00
+tags:	tech
 myTag:	mpi
 
 ---

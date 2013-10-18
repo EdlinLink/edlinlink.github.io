@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "String Matching"
-date:   2013-09-22 00:00:00
+date:   2013-09-22 12:00:00
+tags:	tech
 myTag: 	algorithm
+
 ---
 
 

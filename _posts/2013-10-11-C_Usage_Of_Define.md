@@ -2,6 +2,7 @@
 layout: post
 title:  "C语言之 #define 的用法"
 date:   2013-10-11 12:00:00
+tags:	tech
 myTag:	c/c++
 
 ---

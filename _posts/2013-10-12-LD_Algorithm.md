@@ -2,6 +2,7 @@
 layout: post
 title:  "LD 算法"
 date:   2013-10-12 12:00:00
+tags:	tech
 myTag:	algorithm	
 
 ---

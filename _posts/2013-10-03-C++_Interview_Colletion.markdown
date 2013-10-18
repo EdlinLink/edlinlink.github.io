@@ -1,8 +1,9 @@
 ---
 layout: post
 title:  "C++ Interview Collection 2011"
-date:   2013-10-03 00:00:00
-myTag:	c++
+date:   2013-10-03 12:00:00
+tags:	tech
+myTag:	c/c++
 
 ---
 
