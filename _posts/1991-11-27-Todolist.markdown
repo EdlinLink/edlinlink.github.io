@@ -39,6 +39,7 @@ myTag:
 + <del> LD algorithm (2013.10.13) </del>
 + C++ Multi-thread
 + C++ Network Programming
++ Turing Machine
 
 ## Proj
 + <del> construct Edlin's Blog (2013.10.05) </del>
@@ -50,5 +51,10 @@ myTag:
 + 捐助视障学校的学生
 
 ## Want
++ 学做绿豆饼
++ 学开车
+
+## Wish
 + 古老的打字机(就是觉得好玩而已)
 + 白色方方正正的书架(结实、比我高、耐用)
++ 北岛牛津版诗集《守夜》(实在太精美)
