@@ -11,7 +11,7 @@ myTag:	md5 security
 
 ## MD5 简介
 
-MD5的全称是Message-Digest Algorithm 5, 在90年代由MIT计算机科学实验室和RSA Data Security Inc经过前几代的MD2、MD3和MD4发展而来。MD5通过对任意长度的字符串进行Hash变换，从而得到一个128bits的不可逆的MD5ha哈希值。
+MD5的全称是Message-Digest Algorithm 5, 在90年代由MIT计算机科学实验室和RSA Data Security Inc经过前几代的MD2、MD3和MD4发展而来。MD5通过对任意长度的字符串进行Hash变换，从而得到一个128bits的不可逆的MD5哈希值。
 
 ## MD5 的应用
 
