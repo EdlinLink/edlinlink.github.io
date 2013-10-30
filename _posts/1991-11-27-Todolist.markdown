@@ -17,7 +17,7 @@ myTag:
 + <del> 奇特的一生 - [苏]格拉宁 (2013.10.15) </del>
 + The Meaning of Life - [英]特里.伊格尔顿
 + 编程之美
-+ 代码之美
++ Unix入门经典 
 
 ## Tech
 + MNIST 运用
@@ -41,6 +41,7 @@ myTag:
 + C++ Multi-thread
 + C++ Network Programming
 + Turing Machine
++ DHT
 
 ## Proj
 + <del> construct Edlin's Blog (2013.10.05) </del>
