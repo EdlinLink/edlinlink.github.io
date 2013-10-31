@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Unix命令 - split: 文件分割命令"
+title:  "Unix命令之Split: 文件分割命令"
 date:   2013-10-31 12:00:00
 tags:	tech
 myTag:	unix
