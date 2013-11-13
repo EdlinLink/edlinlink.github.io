@@ -30,7 +30,7 @@ myTag:
 + <del> Graphviz (2013.09.21) </del>
 + <del> Shell 13 Questions (2013.10.08) </del>
 + <del> KMP Algorithm (2013.09.22) </del>
-+ MPI
++ <del> MPI (2013.10.12) </del>
 + Red Black Tree
 + SVT
 + Sum-Product Network
@@ -42,6 +42,9 @@ myTag:
 + C++ Network Programming
 + Turing Machine
 + DHT
++ Segment Tree
++ <del> 中国剩余定理 (2013.11.13) </del>
++ 扩展欧几里得定理
 
 ## Proj
 + <del> construct Edlin's Blog (2013.10.05) </del>
