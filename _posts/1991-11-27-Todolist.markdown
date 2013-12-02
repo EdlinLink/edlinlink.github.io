@@ -18,6 +18,7 @@ myTag:
 + The Meaning of Life - [英]特里.伊格尔顿
 + 编程之美
 + Unix入门经典 
++ <del> 数学之美与浪潮之巅 - 吴军 (2013.11.16) </del>
 
 ## Tech
 + MNIST 运用
@@ -50,6 +51,7 @@ myTag:
 + <del> construct Edlin's Blog (2013.10.05) </del>
 + <del> purchase domain name (2013.10.05) </del>
 + construct Edlin & Abby Blog
++ PageRank on Wiki
 
 ## Futher
 + 工作第一份工资请爸爸妈妈吃饭
@@ -63,3 +65,6 @@ myTag:
 + 古老的打字机(就是觉得好玩而已)
 + 白色方方正正的书架(结实、比我高、耐用)
 + 北岛牛津版诗集《守夜》(实在太精美)
+
+## HATE
++ 讨厌在图书馆占座霸位的人(人不在东西放那里几个小时不回来，强烈鄙视~~)
