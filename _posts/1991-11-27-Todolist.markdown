@@ -52,6 +52,9 @@ myTag:
 + <del> purchase domain name (2013.10.05) </del>
 + construct Edlin & Abby Blog
 + PageRank on Wiki
++ reconstruct MINET
++ open source Swiftly
++ Abby birthday present
 
 ## Futher
 + 工作第一份工资请爸爸妈妈吃饭
