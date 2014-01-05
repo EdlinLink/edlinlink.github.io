@@ -19,6 +19,8 @@ myTag:
 + 编程之美
 + Unix入门经典 
 + <del> 数学之美与浪潮之巅 - 吴军 (2013.11.16) </del>
++ 算法导论
++ Mining of Massive Data
 
 ## Tech
 + MNIST 运用
@@ -51,10 +53,11 @@ myTag:
 + <del> construct Edlin's Blog (2013.10.05) </del>
 + <del> purchase domain name (2013.10.05) </del>
 + construct Edlin & Abby Blog
-+ PageRank on Wiki
++ <del> PageRank on Wiki (2013.12.15) </del>
 + reconstruct MINET
 + open source Swiftly
 + Abby birthday present
++ Radio of tv program
 
 ## Futher
 + 工作第一份工资请爸爸妈妈吃饭
