@@ -21,8 +21,11 @@ myTag:
 + <del> 数学之美与浪潮之巅 - 吴军 (2013.11.16) </del>
 + 算法导论
 + Mining of Massive Data
+<<<<<<< HEAD
 + 毕业前读10本英文书
 
+=======
+>>>>>>> tmp
 
 ## Tech
 + MNIST 运用
@@ -50,7 +53,10 @@ myTag:
 + Segment Tree
 + <del> 中国剩余定理 (2013.11.13) </del>
 + 扩展欧几里得定理
+<<<<<<< HEAD
 + <del> Knapsack (2014.01.18) </del>
+=======
+>>>>>>> tmp
 
 ## Proj
 + <del> construct Edlin's Blog (2013.10.05) </del>
@@ -62,7 +68,10 @@ myTag:
 + Abby birthday present
 + Radio of tv program
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> tmp
 ## Futher
 + 工作第一份工资请爸爸妈妈吃饭
 + 捐助视障学校的学生
@@ -72,11 +81,18 @@ myTag:
 + 学开车
 
 ## Wish
+<<<<<<< HEAD
 + <del> 古老的打字机(就是觉得好玩而已)</del>
+=======
++ 古老的打字机(就是觉得好玩而已)
+>>>>>>> tmp
 + 白色方方正正的书架(结实、比我高、耐用)
 + 北岛牛津版诗集《守夜》(实在太精美)
 
 ## HATE
 + 讨厌在图书馆占座霸位的人(人不在东西放那里几个小时不回来，强烈鄙视~~)
+<<<<<<< HEAD
 + 被要挟/被逼做某事
 
+=======
+>>>>>>> tmp
