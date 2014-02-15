@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Mining of Massive Datasets 读书笔记(update: Dec 3)"
+title:  "Mining of Massive Datasets 读书笔记(update: Feb 15)"
 date:   2013-10-21 12:00:00
 tags:	tech
 myTag:	data_mining machine_learning 
@@ -98,7 +98,7 @@ Clustering: 在聚类中，数据被看作是高唯空间的一个点。越相�
 
 为了在这些记录数据中找到这些坏人，我们尝试找一下有没有哪两个人有两次在同一天同时住在同一间酒店的。我们认为这些人就是可疑的坏人。现在我们来分析一下这样的假设究竟正不正确。假如每个人住酒店这个行为都是随机的，那么某个人在任意一天住酒店的概率是0.01。那么特定的两个人在同一天住酒店的概率就是0.0001。那么他们在同一天住同一酒店的概率就是0.0001再除以酒店数10^5，也就是10^-9。如果他们出现两次同一天住同一酒店的概率就是10^-18。
 
-我们现在想一下，在所有人群中出现两人同一天住同一酒店的期望是多少。从十亿人中选两人，C(2,n)大概是n^2/2，即5*10^17。在1000天的记录中选两天的选法有C(2,1000)，即5*10^5。所以在这1000天的记录中会出现大概
+我们现在想一下，在所有人群中出现两人同一天住同一酒店的期望是多少。从十亿人中选两人，C(2,n)大概是(n^2)/2，即5\*10^17。在1000天的记录中选两天的选法有C(2,1000)，即5\*10^5。所以在这1000天的记录中会出现大概
 
 <center> 5\*10^17 \* 5\*10^5 \* 10^-18 = 250,000 </center>
 
@@ -116,7 +116,7 @@ Clustering: 在聚类中，数据被看作是高唯空间的一个点。越相�
 
 我们对给定词语在文档中出现和文章主题之间关系度量的方法称为TF.IDF(Term Frequency times Inverse Document Frequency)。假设我们有N个文档，定义fij是词组i在文档j中出现的频率。则可再定义词频TFij:
 
-$$TF_ij = f_ij / max_k F_kj$$
+<div>$$ TF_{ij} = \frac{f_{ij}}{max_k F_{kj}} $$</div>
 
 即是词组i在文档j中出现的频率再根据在该文档词频最大的词正则化。文档中最大词频的词(不包括无意词"的","和"...)的TF值是1。
 
@@ -140,5 +140,65 @@ $$TF_ij = f_ij / max_k F_kj$$
 
 + 假设输入类型是record，可以对每一个部分转成整型，全部相加再模除B。
 + 假设输入类型是数组，可以对每一个数组内的元素转成整型，相加再模除B。
+
+### 1.3.3 Indexes
+
+索引是一种能够快速找到所给元素的对象的数据结构，索引通常是存放存放这些对象的地址。哈希表是一种简单生成索引的方法。通过某一些特征，我们只需要查询哈希表某一个桶内的数据，相比起遍历所有数据，时间更少了。
+
+### 1.3.4 Secondary Storage
+
+如果数据量很大，我们就需要知道数据在内存(main memory)和硬盘(disk)上运行时间的不同。
+
+硬盘被组织成块(block)的形式进行操作，块是操作系统最小的能够在内存和硬盘上移动数据的单位。例如Windows系统的块大小为64K bytes. 访问(access)(包括:将磁头移动到合适地方，等待磁盘旋转过来)和读取一个块的信息大概需要十毫秒。延时的数量级大概为10^-5。所以如果计算的数据量很大，那么从硬盘搬运数据到内存的时间可能远远大于真正计算的时间。
+
+"*In fact, if we want to do something simple to every byte of a disk block, e.g., treat the block as a bucket of a hash table and search for a particular value of the hash-key among all the records in that bucket, then the time taken to move the block from disk to main memory will be far larger than the time taken to do the computation.*"
+
+### 1.3.5 The Base of Natural Logarithms
+
+常数e = 2.71828...实际等于(1+1/x)^x，当x趋于无穷大时的值。当x = 1,2,3,4，e大约等于2,2.25,2.37,2.44。
+
+当在(1+a)^b中，a的值很小，我们能够把式子写成(1+a)^((1/a)(ab))。令a=1/x，于是我们能够得到(1+1/x)^((x)(ab))，因为a的值很小，所以x的值很大，所以我们能够把(1+1/x)^x近似于e。即(1+a)^b看成e^ab。
+
+同理，当x为负数时，(1－1/x)^x等于1/e。
+
+### 1.3.6 Power Laws
+
+Power Laws在wiki上指 f(x)=ax^k + o(x^k)这个函数。当k<0时，就是我们常说的长尾立论的那个图。
+
+马太效应(The Matthew Effect)。值强者越强，弱者越弱。在指数大于1的幂函数中，数值将随着x的增大而越来越大。
+
+我们的生活中有很多幂次现象，例如:
+
+1. 产品销售量: 在亚马逊上，商品的销售量曲线是类似于幂函数的。我们有时称它为"长尾"(long tail)。
+2. 网页的多少: 选取一些网站，按每个网站的网页数量排序，它们会形成Power Law的曲线。
+3. Zipf's Law: 当我们统计一篇文章的各个词语的出现次数后，我们同样发现这些词语按照最常用到最少用的顺序来排列是符合Power law的。
+
+"*Often, the existence of power laws with values of the exponent higher than 1 are explained by the Matthew effect. In the biblical Book of Matthew, there is a verse about “the rich get richer.”*"
+
+
+## 1.5 Summary of Chapter 1
+
++ "*Data Mining: This term refers to the process of extracting useful models of data. Sometimes, a model can be a summary of the data, or it can be the set of most extreme features of the data.*"
++ "*Bonferroni’s Principle: If we are willing to view as an interesting feature of data something of which many can be expected to exist in random data, then we cannot rely on such features being significant. This observation limits our ability to mine data for features that are not sufficiently rare in practice.*"
++ "*TF.IDF : The measure called TF.IDF lets us identify words in a collection of documents that are useful for determining the topic of each document. A word has high TF.IDF score in a document if it appears in relatively few documents, but appears in this one, and when it appears in a document it tends to appear many times.*"
++ "*Hash Functions: A hash function maps hash-keys of some data type to integer bucket numbers. A good hash function distributes the possible hash-key values approximately evenly among buckets. Any data type can be the domain of a hash function.*"
++ "*Indexes: An index is a data structure that allows us to store and retrieve data records efficiently, given the value in one or more of the fields of the record. Hashing is one way to build an index.*"
++ "*Storage on Disk: When data must be stored on disk (secondary memory), it takes very much more time to access a desired data item than if the same data were stored in main memory. When data is large, it is important that algorithms strive to keep needed data in main memory.*"
++ "*Power Laws: Many phenomena obey a law that can be expressed as y = cx^a for some power a, often around −2. Such phenomena include the sales of the xth most popular book, or the number of in-links to the xth most popular page.*"
+
+
+
+# Chapter 2 Large-Scale File Systems and Map-Reduce
+
+现代网络应用会产生大量的数据，这些数据都比较常规使得能够实现并行化。重要的例子如:
+
+1. 计算网页重要性。需要进行矩阵乘法，矩阵的维数在千万级别。
+2. 在社交网络中进行"朋友"搜索。涵盖百万个节点和上亿条表。
+
+对于这样的应用，孕育了新的文件系统Map-Reduce。
+
+"*Implementations of map-reduce enable many of the most common calculations on large-scale data to be performed on large collections of computers, efficiently and in a way that is tolerant of hardware failures during the computation.*"
+
+## 2.1 Distributed File Systems
 
 
