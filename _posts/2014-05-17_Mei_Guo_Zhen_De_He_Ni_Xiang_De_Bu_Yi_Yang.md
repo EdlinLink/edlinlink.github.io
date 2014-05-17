@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "《美国，真的和你想的不一样》笔记"
-date:   2014-04-24 12:00:00
+date:   2014-05-17 12:00:00
 tags:	daily
 myTag:	book	
 
