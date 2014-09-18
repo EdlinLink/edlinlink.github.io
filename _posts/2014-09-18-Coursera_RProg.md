@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Coursera: AstroTech"
+title:  "Coursera: R Programming"
 date:   2014-09-18 12:00:00
 tags:	daily
 myTag:	mooc	
