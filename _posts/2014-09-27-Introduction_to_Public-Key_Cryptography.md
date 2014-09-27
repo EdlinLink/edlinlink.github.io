@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[CSIT 5710] Lecture 08: Introduction to Public-Key Cryptography"
-date:   2014-09-27 12:00:00
+date:   2014-09-27 13:00:00
 tags:	tech
 myTag:	security
 
@@ -31,7 +31,7 @@ A six-tuple (M, C, Ke, Kd, Eke , Dkd ), where
 + ke ∈ Ke and kd ∈ Kd are corresponding encryption and decryption keys respectively;
 + Eke	and Dkd	are the encryption and decryption transformations, and
 
-<div> $$D_k_d(E_k_e (m)) = m$$ </div>
+<div> $$D_{k_d}(E_{k_e}(m)) = m$$ </div>
 
 for all m ∈ M (unique and correct decryption).
 
@@ -62,7 +62,7 @@ key ke(A) and the encryption algorithm in the public directory, encrypts the mes
 
 Suppose that the system has the further property
 
-<div>$$E_k_e(D_k_d(x)) = x,$$</div>
+<div>$$E_{k_e}(D_{k_d}(x)) = x,$$</div>
 
 for all x ∈ C. 
 
