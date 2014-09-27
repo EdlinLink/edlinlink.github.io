@@ -11,9 +11,8 @@ myTag:	security
 
 ---------------------------------------------------------------------------
 
-1. The generation and distribution of secret keys. 
-2. A key distribution protocol with a key distribution center. 
-3. The Diffie-Hellman key exchange protocol.
+1. A key distribution protocol with a key distribution center. 
+2. The Diffie-Hellman key exchange protocol.
 
 ## A Key Distribution Protocol
 
@@ -75,7 +74,8 @@ myTag:	security
 + Steps (4) and (5) assure B that the original message received in Step (3) was not a replay of an earlier one by a third person.
 + Steps (4), (5) and (3) are for authentication.
 
------------------------
+
+## Diffie-Hellman Key Exchange Protocal
 
 ### Discrete logarithms
 
