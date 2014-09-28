@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "[CSIT 5710] Basic Design Ideas of One-Key Ciphers"
+title:  "[CSIT 5710] Lecture 04: Basic Design Ideas of One-Key Ciphers"
 date:   2014-09-14 12:00:00
 tags:	tech
 myTag:	security
 
 ---
 
-# Basic Design Ideas of One-Key Ciphers
+# Lecture 04: Basic Design Ideas of One-Key Ciphers
 
 ---------------------------------------------------------------------------
 
@@ -100,7 +100,7 @@ A function g : A → B is **affine** if and only if g = f + b for a linear funct
 
 ### 1. The Iterative Design Paradigm
 
-<div>$$ E_k(m) = f_k_16(f_k_15(...k_k_2(f_k_1(m))...))$$</div>
+<div>$$ E_k(m) = f_{k_16}(f_{k_15}(...k_{k_2}(f_{k_1}(m))...))$$</div>
 
 1. they have good diffusion and confusion with respect to the secret key bits and message block bits, and
 2. they are fast in software and hardware
