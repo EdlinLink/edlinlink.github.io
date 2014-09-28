@@ -11,7 +11,11 @@ myTag:	security
 
 ---------------------------------------------------------------------------
 
-## Part 1: Linear and Nonlinear Functions
+1. To introduce linear and nonlinear functions. 
+2. To introduce Shannon’s confusion and diffusion. 
+3. To present basic design ideas of one-key ciphers.
+
+## Linear and Nonlinear Functions
 
 ### Abelian groups
 
@@ -89,14 +93,14 @@ A function g : A → B is **affine** if and only if g = f + b for a linear funct
 	4. pg = |a4=b|/|A|, (a=(0,0,0,1), b=1) = 16/16=1;
 
 
-## Part 2: Shannon’s Diffusion and Confusion
+## 2: Shannon’s Diffusion and Confusion
 
 + **Diffusion**: Each plaintext block bit or key bit affects many bits of the ciphertext block. (描述作用的情况)
 
 + **Confusion**: Each bit of the ciphertext block has highly nonlinear relations with the plaintext block bits and the key bits. (描述非线性的情况)
 
 
-## Part 3: An Important Design Paradigm
+## 3: An Important Design Paradigm
 
 ### 1. The Iterative Design Paradigm
 
