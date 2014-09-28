@@ -96,6 +96,32 @@ virtual可以用来定义类函数和应用到虚继承。
 	
 	//	默认继承方式是private
 
+---------------------------------------------
+
+需要特别注意的是: 我们知道虚函数是动态绑定的，但是为了执行效率，它们的却省参数是静态绑定的。
+
+	class B{
+	public:
+		virtual void func(int i = 10){
+			cout << i << endl;
+		}
+	}
+
+	class D : public B{
+	public:
+		virtual void func(int i = 20){
+			cout << i << endl;
+		}
+	}
+
+	D* pD = new D();
+	B* pB = pD;
+	pD->func();
+	pB->func();
+
+虽然上面代码的pD->func()和pB->func()都是调用函数D::func()，但由于却省函数是静态绑定的，pD->func()的静态类型是D*，所以它的却省函数应该是20；同理，pB->func()的却省函数应该是10。
+
+所以，请记住:**"Never redefine function's inherited default parameters value"(绝不重新定义继承而来的缺省参数)**.
 
 ## Reference 
 
