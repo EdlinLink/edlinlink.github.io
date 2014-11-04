@@ -61,8 +61,8 @@ So **a^{φ(n)} mod n = 1**
 
 ## The RSA Public-Key Cryptosystem
 
-**Plaintext space**: M = {0, 1} *.  
-**Ciphertext space**: C = {0, 1} *.  
+**Plaintext space**: M = {0, 1} * .  
+**Ciphertext space**: C = {0, 1} * .  
 
 Choose two distinct primes p and q. Define n = pq.
 
@@ -119,7 +119,7 @@ gcd(M,n)=pq only when M=0. Then C=0. Satisfy.
 	p	q	n	φ	e	d
 	5	11	55	40	7	23
 
-**Public key**: (e,n) (7,55)
+**Public key**: (e,n) (7,55)  
 **Private key**: d 23  
 **Encryption**: M = 28, C = M^e mod n = 28^7 mod 55 = 52  
 **Decryption**: M = C^d mod n = 52^23 mod 55 = 28
