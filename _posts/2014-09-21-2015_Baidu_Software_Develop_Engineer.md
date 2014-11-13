@@ -100,39 +100,75 @@ memcpy需要考虑地址重叠的问题。
 			cout << "NULL" << endl;
 	}
 
-### 3. 实现一个栈，具有min函数，且实践复杂度为O(1)。
+其实这个设计也不好，我们可以从右上角的元素开始判断。如果所查找的元素比当前元素小，则向左搜索；如果查找的元素比当前元素大，则向下搜索。
 
-	#include <stack>
-	#include <iostream>
-	using namespace std;
 
-	class myStack{
-		
+	bool Find(int *matrix, int row, int col, int x){
+		int i = 0;
+		int j = col-1;
+
+		while(matrix!=NULL && i<row && 0<=j){
+			if(matrix[i*col + j] == x){
+				cout << '<' << i << " " << j << endl;
+				return true;
+			}
+			else{
+				if(matrix[i*col +j] > x)
+					j--;
+				else
+					i++;
+			}
+		}
+		cout << "NULL" << endl;
+		return false;
+	}
+
+
+### 3. 实现一个栈，具有min函数，且时间复杂度为O(1)。
+
+我们需要记住的是这个新的数据结构依然要保持后进先出的栈的特性，所以如果你打算利用两个栈将元素移动，每次返回min，那么可能是行不通的。
+
+如果我们用另一个辅助栈，来记录当前最小元素的值，每次添加元素的时候，这个辅助栈就记录当前最小的元素；每次弹出元素的时候，这个辅助栈就弹出当前最小的元素。例如:
+
+	步骤		数据栈		辅助栈		最小值		返回值
+	push(3)		3			3			3
+	push(4)		3,4			3,3			3
+	push(2)		3,4,2		3,3,2		2
+	push(1)		3,4,2,1		3,3,2,1		1
+	pop()		3,4,2		3,3,2		2			1
+	pop()		3,4			3,3			3			2
+	push(0)		3,4,0		3,3,0		0
+
+代码如下
+
+	class StackWithMin{
 	private:
-		stack<int> sta;
-		stack<int> temp;
+		stack<int> data_stack;
+		stack<int> min_stack;
 
 	public:
 		void push(int x){
-			while(!sta.empty() && sta.top()<x){
-				temp.push(sta.top());
-				sta.pop();
-			}
-			sta.push(x);
-			while(!temp.empty()){
-				sta.push(temp.top());
-				temp.pop();
-			}
+			data_stack.push(x);
+			if(min_stack.empty() || min_stack.top() > x)
+				min_stack.push(x);
+			else
+				min_stack.push(min_stack.top());
+		}
+
+		int pop(){
+			int tmp = data_stack.top();
+			data_stack.pop();
+			min_stack.pop();
+			return tmp;
 		}
 
 		int min(){
-			return sta.top();
-		}
-
-		void pop(){
-			sta.pop();
+			return min_stack.top();
 		}
 	};
+
+
+
 
 ## 三 系统设计题
 
