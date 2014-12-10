@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "Coursera: Web Application"
+title:  "Coursera: Web Application Architectures"
 date:   2014-11-04 12:00:00
 tags:	daily
 myTag:	mooc	
 
 ---
 
-# University of New Mexico: Web Application
+# University of New Mexico: Web Application Architectures
 
 --------------------------------------
 
