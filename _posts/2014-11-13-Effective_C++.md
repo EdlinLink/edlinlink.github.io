@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "《剑指Offer》读书笔记"
-date:   2014-10-04 12:00:00
+title:  "Effective C++ 读书笔记"
+date:   2014-11-13 12:00:00
 tags:	tech
-myTag:	interview
+myTag:	c++
 
 ---
 
