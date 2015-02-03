@@ -8,78 +8,13 @@ myTag:
 
 
 ## Book
-+ <del> 把时间当作朋友 - 李笑来 (2013.09.24) </del>
-+ <del> 奇特的一生 - [苏]格拉宁 (2013.10.15) </del>
-+ <del> 数学之美与浪潮之巅 - 吴军 (2013.11.16) </del>
-+ <del> 思想国 - 熊培云 (2014.02.01) </del>
-+ <del> 黑客与画家 - [美]Paul Graham (2014.02.19) </del>
-+ <del> 推荐系统实践 - 项亮 (2014.02.26) </del>
-+ 宽容与自由 - 胡适
-+ My Country and My People - 林语堂
-+ Convex Optimization
-+ The Meaning of Life - [英]特里.伊格尔顿
-+ 编程之美
-+ Unix入门经典 
-+ 算法导论
-+ Mining of Massive Data
-+ 集体智慧编程
-
++ 《STL 源码剖析》
++ 《Go Web 编程》
 
 ## Tech
-+ <del> Reverse Index (2013.10.04) </del>
-+ <del> Graphviz (2013.09.21) </del>
-+ <del> Shell 13 Questions (2013.10.08) </del>
-+ <del> KMP Algorithm (2013.09.22) </del>
-+ <del> MPI (2013.10.12) </del>
-+ <del> C++面试宝典2011 (2013.10.04) </del>
-+ <del> MathJax (2013.10.13) </del>
-+ <del> LD algorithm (2013.10.13) </del>
-+ <del> 中国剩余定理 (2013.11.13) </del>
-+ <del> Knapsack (2014.01.18) </del>
-+ MNIST 运用
-+ Hadoop
-+ Deep Learning Tutorial
-+ Weibo Spider
-+ Map Reduce
-+ Python Graph
-+ Red Black Tree
-+ SVT
-+ Sum-Product Network
-+ RAS MD5
-+ C++ Multi-thread
-+ C++ Network Programming
-+ Turing Machine
-+ DHT
-+ Segment Tree
-+ 扩展欧几里得定理
-+ EdgeRank
 
 ## Proj
-+ <del> construct Edlin's Blog (2013.10.05) </del>
-+ <del> purchase domain name (2013.10.05) </del>
-+ <del> PageRank on Wiki (2013.12.15) </del>
-+ <del> Abby birthday present (2014.01.27) </del>
-+ construct Edlin & Abby Blog
-+ reconstruct MINET
-+ open source Swiftly
-+ Radio of tv program
-+ book reader
-+ map locuc
 
 ## Futher
 + 工作第一份工资请爸爸妈妈吃饭
 + 捐助视障学校的学生
-
-## Want
-+ 学做绿豆饼
-+ 学开车
-+ 毕业前读10本英文书
-
-## Wish
-+ 白色方方正正的书架(结实、比我高、耐用)
-+ 北岛牛津版诗集《守夜》(实在太精美)
-
-## Hate
-+ 讨厌在图书馆占座霸位的人(人不在东西放那里几个小时不回来，强烈鄙视~~)
-+ 被逼着做事情
-
