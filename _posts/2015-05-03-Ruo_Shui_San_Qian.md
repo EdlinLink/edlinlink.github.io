@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "《弱水三千》笔记"
-date:   2015-03-05 12:00:00
+date:   2015-05-05 12:00:00
 tags:	daily
 myTag:	book	
 
