@@ -67,6 +67,8 @@ myTag:	c++
 
 -------------------------------------------------------------------
 
+### 封装成类
+
 通过上面段代码，你已经可以按照你的意愿输出不同的内容来debug了，这个时候最好将debugPrintf写进一个类里面，设置一个flag变量来控制是否打印:
 
 	#define	DEBUG	1
@@ -86,6 +88,106 @@ myTag:	c++
 		int mode;
 	};
 
+-------------------------------------------------------------------------
+
+### 输出颜色
+
+我个人喜好是将printDebug信息分成两种，一种是输出成功信息printSuccDebug，另一种是输出失败信息printErrDebug。希望在终端的时候就颜色分明的显示出来，那么最好的方法就是根据Succ或者Err输出不同颜色。
+
+<font color=#ADADAD>*终端的字符颜色是用转义序列控制的，是文本模式下的系统显示功能，和具体的语言无关。转义序列是以ESC开头，可以用"\033"完成相同的工作(ESC 的ASCII 码用十进制表示就是27，等于用八进制表示的33）*  -- emmoblin 《printf在终端输出时改变颜色》</font>
+
+	\033["显示方式"; "前景色"; "背景色"m
+
+	显示方式:
+	0:	默认值
+	1:	高亮
+	4:	下划线
+	5:	闪烁
+	7:	反显
+	22:	非粗体
+	24:	非下划线
+	25:	非闪烁
+	27:	非反显
+
+	前景色:
+	30: 黑色
+	31: 红色
+	32: 绿色 
+	33: 黄色
+	34: 蓝色
+	35: 洋红
+	36: 青色
+	37: 白色
+
+	背景色:
+	40: 黑色
+	41: 红色
+	42: 绿色 
+	43: 黄色
+	44: 蓝色
+	45: 洋红
+	46: 青色
+	47: 白色
+
+所以比较适合的方式是，Succ输出绿色，Err输出红色
+
+	\033[0m			Default
+	\033[1; 32; 40m Succ
+	\033[1; 31; 40m Err
+
+	printf( "\033[1; 31; 40m[Succ]");
+	...
+	printf( "\033[0m");
+
+----------------------------------------------------------
+
+### 最终参考代码
+
+	#define	DEBUG	1
+	#define	RELEASE	0
+	
+	class Utils{
+	public:
+		Utils(){	mode = DEBUG;	}
+
+		void debugPrintf(const char *cmd, ...){
+			if( mode == DEBUG){
+				printf("[Debug] ");
+				va_list args;
+				va_start(args, cmd);
+				vprintf(cmd, args);
+				va_end(args);
+				printf("\n");  
+			}
+		}
+
+		void debugSuccPrint(const char *cmd, ...){
+			if( mode == DEBUG){
+				printf( "\033[1; 31; 40m[Succ] ");
+				va_list args;
+				va_start(args, cmd);
+				vprintf(cmd, args);
+				va_end(args);
+				printf( "\033[0m\n");
+			}
+		}
+
+		void debugErrPrint(const char *cmd, ...){
+			if( mode == DEBUG){
+				printf( "\033[1; 30; 40m[Err] ");
+				va_list args;
+				va_start(args, cmd);
+				vprintf(cmd, args);
+				va_end(args);
+				printf( "\033[0m\n");
+			}
+		}
+
+	private:
+		int mode;
+
+	};
+
 
 -----------------------------------------------------------
 
@@ -97,3 +199,5 @@ myTag:	c++
 4. [alpha. 百度百科](http://baike.baidu.com/link?url=rUb2q0AA2ZnwS16cR61MDm3TLndXXJPIHGSfTRR8fNP5WSToxcLtwAlolnXdD5zoS-Td82DV1XrVHzsb03R7S6f-QA7ZZVxnuqwlvIInsRq)
 5. [#define _INTSIZEOF(n) ( (sizeof(n) + sizeof(int) - 1) & ~(sizeof(int) - 1) )=>中的 & ~什么意思. 百度知道](http://zhidao.baidu.com/link?url=S62W6mB5EbHsFCJEfoNLc9bH-rDcBYg9H3hvN9bYhgueO9AFvz4vf9VoOtB92_FDatc6W_E2AcPKcyNTNtRkF_)
 6. [vprintf. 百度百科](http://baike.baidu.com/link?url=d-EONMiJZVGO_yox0xBth8TmNZ6xsA_9mOJwgP_-iMgYMuiSTd6sBceoRsa62HVypWYg-g5QW0Zq60FvtI5o8a)
+7. [fprintf 的封装（vsprintf,va_start(), va_arg(), va_end()可变参数列表）. 海王](http://www.cnblogs.com/leaven/archive/2010/06/29/1767374.html)
+8. [printf在终端输出时改变颜色. emmoblin](http://blog.chinaunix.net/uid-20778443-id-94545.html)
