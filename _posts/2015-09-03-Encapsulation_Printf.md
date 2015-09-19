@@ -188,6 +188,13 @@ myTag:	c++
 
 	};
 
+### 题外话
+
+我还在网上看到一种封装printf很机智的方式，写成宏:
+
+	#define DBG_PRINT (printf("%s:%u %s:%s:\t", __FILE__, __LINE__, __DATE__, __TIME__), printf)
+
+这种方法虽然不能按照不同的需求输出参数，方式也非常的赞。
 
 -----------------------------------------------------------
 
@@ -201,3 +208,5 @@ myTag:	c++
 6. [vprintf. 百度百科](http://baike.baidu.com/link?url=d-EONMiJZVGO_yox0xBth8TmNZ6xsA_9mOJwgP_-iMgYMuiSTd6sBceoRsa62HVypWYg-g5QW0Zq60FvtI5o8a)
 7. [fprintf 的封装（vsprintf,va_start(), va_arg(), va_end()可变参数列表）. 海王](http://www.cnblogs.com/leaven/archive/2010/06/29/1767374.html)
 8. [printf在终端输出时改变颜色. emmoblin](http://blog.chinaunix.net/uid-20778443-id-94545.html)
+9. [封装自己的printf函数. Maddock](http://www.cnblogs.com/adong7639/p/4186779.html)
+
