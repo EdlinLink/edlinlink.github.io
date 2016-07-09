@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{{ page.title }}</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+        <!-- highlight code  CSS -->
+        <link rel="stylesheet" href="/css/pygments.css">
+
+		<!-- MathJax-->
+		<script type="text/javascript"
+		   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+    </head>
+    <body >
+		<div class="header">
+			<div class="headimg">
+				<a href="/"><img src=../picture/{{ page.headimg }} width="100%" ></a>
+			</div>
+
+	    	<div class="navigation">
+					<br>
+					<a class="extra" href="/archive.html">ARCHIVE</a>
+					<a class="extra" href="/life.html">LIFE</a>
+					<a class="extra" href="/about.html">ABOUT</a>
+			</div>
+			
+			<div class="clear">
+			</div>
+		</div>
+
+
+        <div class="site">
+          {{ content }}
+		</div>
+
+
+
+		<div class="footer">
+			<p class="copyright">
+				Copyright © Junhao Lin 2016
+				<br>
+				<iframe style="margin-left: 2px; margin-bottom:-5px;" frameborder="0" scrolling="0" width="91px" height="20px" src="https://ghbtns.com/github-btn.html?user=edlinlink&repo=edlinlink.github.io&type=star&count=true" /iframe>
+			</p>
+        </div>
+
+
+    </body>
+</html>

@@ -1,0 +1,12 @@
+---
+layout: default
+headimg: junhaolin_name.png
+---
+
+<div id="book">
+  <ul class="posts">
+	{% for post in site.tags.daily %}
+		<li><a href="{{ post.url }}">{{ post.title }}</a> - <span>{{ post.date | date_to_string }}</span></li> 
+	{% endfor %}
+  </ul>
+</div>
