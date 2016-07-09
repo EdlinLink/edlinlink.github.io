@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Leetcode - Super Pow"
+title:  "Leetcode - 372. Super Pow"
 date:   2016-07-07 12:00:00
 tags:	technology
 myTag:	algorithm
