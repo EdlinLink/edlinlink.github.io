@@ -1,13 +1,17 @@
 ---
 layout: default
 title: Edlin's Blog
+headimg: junhaolin_name.png
 ---
 
 <div id="archive">
   <h1>Archive</h1>
   <ul class="posts">
-    {% for post in site.tags.tech %}
+    {% for post in site.tags.technology %}
       <li><a href="{{ post.url }}">{{ post.title }}</a> - <span>{{ post.date | date_to_string }}</span></li>
+	<div class="summary">
+		{{ post.content | strip_html | truncate:200 }}
+	</div>
 	{% endfor %}
   </ul>
 </div>

@@ -1,13 +1,20 @@
 ---
-layout: default
+layout: home
 title: Edlin's Blog
+headimg: junhaolin_name.png
 ---
 
-<div id="home">
-  <h1>Recent Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts limit:10 %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a> - <span>{{ post.date | date_to_string }}</span></li>
+<div class="home">
+	{% for post in site.tags.technology limit:1 %}
+	<div class="search">
+		
+		<input value="{{ post.title }}" /> 
+	</div>
+	<div class="click_box">
+		<a href={{ post.url }} >
+			<input value="Read It" readonly="readonly"/>
+		</a>
+		<input value="Im Feeling Lucky" readonly="readonly"/>
+	</div>
 	{% endfor %}
-  </ul>
 </div>
