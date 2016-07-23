@@ -25,6 +25,7 @@ body {
 
 p {
     line-height:1.5em;
+	margin-bottom:1em;
 }
 
 table {
@@ -73,9 +74,11 @@ pre {
     -moz-border-radius:3px;border-radius:3px;
 }
 
+/*	Code	
+ */
 pre code {
     padding:0;
-    font-size:12px;
+    font-size:14px;
     background-color:#eee;
     border:none;
 }
@@ -297,6 +300,8 @@ ul.posts span {
 .site .meta {
   display: inline-block;
   color: #aaa;
+  margin-bottom:0em;
+  
 }
 
 
