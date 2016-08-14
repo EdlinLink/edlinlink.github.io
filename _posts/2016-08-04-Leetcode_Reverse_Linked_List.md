@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Leetcode - Reverse Linked List"
+title:  "Leetcode - 206. Reverse Linked List"
 date:   2016-08-14 12:00:00
 tags:	technology
 myTag:	algorithm
