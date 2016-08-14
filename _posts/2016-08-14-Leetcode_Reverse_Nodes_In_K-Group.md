@@ -4,6 +4,7 @@ title:  "Leetcode - 25. Reverse Nodes in k-Group"
 date:   2016-08-14 12:00:00
 tags:	technology
 myTag:	algorithm
+headimg:	demo.png
 
 ---
 
