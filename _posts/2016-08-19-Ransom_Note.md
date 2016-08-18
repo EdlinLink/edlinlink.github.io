@@ -27,7 +27,7 @@ It is a easy problem, we just need to count the quantity of each letter in magaz
 
 ### 2. AC Code
 
-(Line 12)
+(12 Lines)
 
 	class Solution {
 	public:
