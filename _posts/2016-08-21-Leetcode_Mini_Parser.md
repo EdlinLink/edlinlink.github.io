@@ -1,10 +1,10 @@
 ---
 layout: post
 title:  "Leetcode - 385. Mini Parser"
-date:   2015-11-27 12:00:00
+date:   2016-08-22 12:00:00
 tags:	technology
 myTag:	algorithm
-headimg: demo.jpg
+headimg: demo.png
 
 ---
 

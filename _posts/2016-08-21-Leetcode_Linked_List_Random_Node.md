@@ -4,7 +4,7 @@ title:  "Leetcode - 382. Linked List Random Node"
 date:   2016-08-21 12:00:00
 tags:	technology
 myTag:	algorithm
-headimg: demo.jpg
+headimg: demo.png
 
 ---
 
