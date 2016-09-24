@@ -36,7 +36,7 @@ The 11th digit of the sequence 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, ... is a 0, wh
 
 ### 1. Analyse
 
-One digit numbers range [1,9](total 9). Two digit numbers range [10,99](total 90). Three digit numbers range [100,999](total 900).
+One digit numbers range \[1,9\](total 9). Two digit numbers range \[10,99\](total 90). Three digit numbers range \[100,999\](total 900).
 
 ### 2. AC Code
 

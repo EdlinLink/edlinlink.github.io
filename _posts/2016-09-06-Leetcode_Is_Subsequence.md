@@ -26,11 +26,13 @@ s = "axc", t = "ahbgdc"
 
 Return false.
 
-### Analyse
+### 1. Analyse
 
 A `for` loop ?!
 
-### AC Code
+### 2. AC Code
+
+(12 Lines) 
 
 	class Solution {
 	public:
