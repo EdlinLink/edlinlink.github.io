@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Leetcode - 388. Longest Absolute File Path"
-date:   2015-11-27 12:00:00
+date:   2016-08-23 12:00:00
 tags:	technology
 myTag:	algorithm
 headimg: demo.png
