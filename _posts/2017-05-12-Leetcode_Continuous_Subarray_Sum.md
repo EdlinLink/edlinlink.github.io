@@ -67,26 +67,26 @@ Every k can be multiply by `0` to return true.
 ---
 ### 3. Wrong Code
 
-class Solution {
-public:
-    bool checkSubarraySum(vector<int>& nums, int k) {
-		k = abs(k);
- 		for(int i=0; i<nums.size() && k!=0; i++)
-			nums[i] = nums[i] % k;
-		
-		int sum = 0, i = -1, j = -1;
-		while( i<(int)nums.size() && j<(int)nums.size() ){
-			if( ((0==k && sum==k) || (0!=k && 0 == sum%k)) && j-i>=2 )
-				return true;
-
-			if( sum > k )
-				sum -= nums[++i];
-			else
-				sum += nums[++j];	
-		}
-		return false;
-    }
-};
+	class Solution {
+	public:
+	    bool checkSubarraySum(vector<int>& nums, int k) {
+			k = abs(k);
+	 		for(int i=0; i<nums.size() && k!=0; i++)
+				nums[i] = nums[i] % k;
+			
+			int sum = 0, i = -1, j = -1;
+			while( i<(int)nums.size() && j<(int)nums.size() ){
+				if( ((0==k && sum==k) || (0!=k && 0 == sum%k)) && j-i>=2 )
+					return true;
+	
+				if( sum > k )
+					sum -= nums[++i];
+				else
+					sum += nums[++j];	
+			}
+			return false;
+	    }
+	};
 
 ---
 ### 4. Where We Go Wrong
@@ -103,31 +103,31 @@ If the sum up mod is appear twice, it means there is a loop.
 ---
 ### 5. AC Code
 
-class Solution {
-public:
-    bool checkSubarraySum(vector<int>& nums, int k) {
-		map<int,int> mp;
-		mp[0]++;
-		k = abs(k);
-		int sum = 0;
-
- 		for(int i=0; i<nums.size(); i++){
-			sum += nums[i];
-			int mod = ( 0==k ? sum : sum%k );
-			mp[mod]++;
-
-			if( 0 == k ){
-				if( mp[mod]>=2 )	
-					return true;
+	class Solution {
+	public:
+	    bool checkSubarraySum(vector<int>& nums, int k) {
+			map<int,int> mp;
+			mp[0]++;
+			k = abs(k);
+			int sum = 0;
+	
+	 		for(int i=0; i<nums.size(); i++){
+				sum += nums[i];
+				int mod = ( 0==k ? sum : sum%k );
+				mp[mod]++;
+	
+				if( 0 == k ){
+					if( mp[mod]>=2 )	
+						return true;
+				}
+				else{
+					if( mp.find(mod) != mp.end() && i>0 )	
+						return true;
+				}
 			}
-			else{
-				if( mp.find(mod) != mp.end() && i>0 )	
-					return true;
-			}
-		}
-		return false;
-    }
-};
+			return false;
+	    }
+	};
 
 
 ---
