@@ -10,9 +10,9 @@ headimg: demo.png
 
 ### Single Linked List Reverse
 
-`Linked List Reverse` is a typical interview question to determine whether the interviewee understand linked-list data structure good enought or not. 
+**Linked List Reverse** is a typical interview question to determine whether the interviewee understand linked-list data structure good enought or not. 
 
-Here is two typical method to reverse a linked-list. We can remember them in mind as a template to slove any linked list reverse problem.
+Here are two typical methods to reverse a linked-list. We can remember them in mind as a template to slove any linked list reverse problem.
 
 ---
 
