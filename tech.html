@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Edlin's Blog
+title: Junhao's Tech
 headimg: junhaolin_name.png
 ---
 
@@ -8,9 +8,11 @@ headimg: junhaolin_name.png
   <h1>Archive</h1>
   <ul class="posts">
     {% for post in site.tags.technology %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a> - <span>{{ post.date | date_to_string }}</span></li>
+      <li><a href="{{ post.url }}">{{ post.title }}</a> - <span>{{ post.date | date: "%B %d, %Y" }}</span></li>
 	<div class="summary">
 		{{ post.content | strip_html | truncate:200 }}
+
+		<hr>
 	</div>
 	{% endfor %}
   </ul>

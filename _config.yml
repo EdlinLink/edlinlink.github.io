@@ -1,9 +1,9 @@
-name: Edlin's Blog
+name: Junhao's Blog
 markdown: kramdown
 kramdown:
   input: GFM
   hard_wrap: false
 highlighter: rouge
 permalink: none
-
+timezone: CA
 
