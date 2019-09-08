@@ -19,7 +19,7 @@ headimg: us_quarter_1967.jpg
 Year|-1strelease-|-2ndrelease-|-3rdrelease-|-4threlease-|-5threlease-|-6threlease-
 ----|---|---|---|---|---|---
 1999|Delaware|Pennsylvania|New Jersey|Georgia|Connecticut
-2000|Massachusetts![Massachusetts](../picture/coins/US-Quarter-2000-Massachusetts.png){:height="100px"}{:width="100px"}|Maryland![Maryland](../picture/coins/US-Quarter-2000-Maryland.png){:height="100px"}{:width="100px"}|South Carolina|New Hampshire|Virginia
+2000|Massachusetts![Massachusetts](../picture/coins/US-Quarter-2000-Massachusetts.png){:height="100px"}{:width="100px"}|Maryland![Maryland](../picture/coins/US-Quarter-2000-Maryland.png){:height="100px"}{:width="100px"}|South Carolina|New Hampshire|Virginia![Virginia](../picture/coins/US-Quarter-2000-Virginia.png)
 2001|New York|North Carolina|Rhode Island|Vermont|Kentucky
 2002|Tennessee|Ohio|Louisiana|Indiana|Mississippi
 2003|Illinois|Alabama![Alabama](../picture/coins/US-Quarter-2003-Alabama.png){:height="100px"}{:width="100px"}|Maine![Maine](../picture/coins/US-Quarter-2003-Maine.png){:height="100px"}{:width="100px"}|Missouri|Arkansas
