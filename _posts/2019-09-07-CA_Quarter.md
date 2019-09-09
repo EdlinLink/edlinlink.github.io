@@ -26,7 +26,7 @@ Year| Reverse | Obverse | Theme
 2007|![](../picture/coins/CA-Quarter-2007-Olympics-AlpineSkiing-Rev.png){:height="5.5%"}|![](../picture/coins/CA-Quarter-2007-Olympics-AlpineSkiing-Obv.png){:height="5%"}|Alpine Skiing
 2008|![](../picture/coins/CA-Quarter-2008-Olympics-FigureSkating-Rev.png){:height="4.5%"}|![](../picture/coins/CA-Quarter-2008-Olympics-FigureSkating-Obv.png){:height="5%"}|Figure Skating
 2008|![](../picture/coins/CA-Quarter-2008-Olympics-FreestyleSkiing-Rev.png){:height="4.8%"}|![](../picture/coins/CA-Quarter-2008-Olympics-FreestyleSkiing-Obv.png){:height="6%"}|Freestyle Skiing
-2009|![](../picture/coins/CA-Quarter-2009-Olympics-CrossCountrySkiing-Rev.png){:height="5.5%"}|![](../picture/coins/CA-Quarter-2009-Olympics-CrossCountrySkiing-Obv.png){:height="5.5%"}|Speed Skating
+2009|![](../picture/coins/CA-Quarter-2009-Olympics-CrossCountrySkiing-Rev.png){:height="5.5%"}|![](../picture/coins/CA-Quarter-2009-Olympics-CrossCountrySkiing-Obv.png){:height="5.5%"}|Cross Country Skiing
 2009|![](../picture/coins/CA-Quarter-2009-Olympics-SpeedSkating-Rev.png){:height="5%"}|![](../picture/coins/CA-Quarter-2009-Olympics-SpeedSkating-Obv.png){:height="6%"}|Speed Skating
 2009|![](../picture/coins/CA-Quarter-2009-Olympics-CindyKlassen-Rev.png){:height="6%"}|![](../picture/coins/CA-Quarter-2009-Olympics-CindyKlassen-Obv.png){:height="6%"}|Cindy Klassen
 
