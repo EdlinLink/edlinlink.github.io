@@ -4,6 +4,7 @@ title:  "CA Quarters"
 date:   2019-09-08 12:00:00
 tags:	life
 myTag:	coin
+headimg: demo.png
 
 ---
 
