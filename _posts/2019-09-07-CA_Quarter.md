@@ -8,16 +8,6 @@ headimg: demo.png
 
 ---
 
-### Single commemorative designs
-
-Year| Reverse | Obverse | Theme
-----|---------|---------|-------
-2002|![](../picture/coins/CA-Quarter-2002-CanadianMapleLeaf-Rev.png){:height="5.6%"}|![](../picture/coins/CA-Quarter-2002-CanadianMapleLeaf-Obv.png){:height="4.4%"}|Canadian Maple Leaf
-2005|![](../picture/coins/CA-Quarter-2005-Alberta-Rev.png){:height="5%"}|![](../picture/coins/CA-Quarter-2005-Alberta-Obv.png){:height="5.2%"}|Alberta
-2015|![](../picture/coins/CA-Quarter-2015-100thAnniversaryOfTheWritingOfInFlandersField-Rev.png){:height="5.2%"}|![](../picture/coins/CA-Quarter-2015-100thAnniversaryOfTheWritingOfInFlandersField-Obv.png){:height="5.3%"}|100th anniversary of the <br> writing of *In Flanders Field*
-2017|![](../picture/coins/CA-Quarter-2017-Canada150thAnniversary-Rev.png){:height="5.5%"}|![](../picture/coins/CA-Quarter-2017-Canada150thAnniversary-Obv.png){:height="5.5%"}|Canada 150th Anniversary
-2017|![](../picture/coins/CA-Quarter-2017-125thAnniversaryOfTheStanleyCup-Rev.png){:height="5%"}|![](../picture/coins/CA-Quarter-2017-125thAnniversaryOfTheStanleyCup-Obv.png){:height="5.2%"}|125th anniversary af the Stanley Cup
-
 ### 125th Anniversary of Confederation
 
 Year| Reverse | Obverse | Theme
@@ -32,8 +22,15 @@ Year| Reverse | Obverse | Theme
 2000|![](../picture/coins/CA-Quarter-2000-Millennium-Freedom-Rev.png){:height="6%"}|![](../picture/coins/CA-Quarter-2000-Millennium-Freedom-Obv.png){:height="6.6%"}|Freedom
 
 
-### Vancouver Olympics
+### Single commemorative designs
 
+Year| Reverse | Obverse | Theme
+----|---------|---------|-------
+2002|![](../picture/coins/CA-Quarter-2002-CanadianMapleLeaf-Rev.png){:height="5.6%"}|![](../picture/coins/CA-Quarter-2002-CanadianMapleLeaf-Obv.png){:height="4.4%"}|Canadian Maple Leaf
+2005|![](../picture/coins/CA-Quarter-2005-Alberta-Rev.png){:height="5%"}|![](../picture/coins/CA-Quarter-2005-Alberta-Obv.png){:height="5.2%"}|Alberta
+
+
+### Vancouver Olympics
 Year| Reverse | Obverse | Theme
 ----|---------|---------|-------
 2007|![](../picture/coins/CA-Quarter-2007-Olympics-Curling-Rev.png){:height="4.8%"}|![](../picture/coins/CA-Quarter-2007-Olympics-Curling-Obv.png){:height="4.8%"}|Curling
@@ -49,12 +46,19 @@ Year| Reverse | Obverse | Theme
 2009|![](../picture/coins/CA-Quarter-2009-Olympics-MensIceHockey-Rev.png){:height="6%"}|![](../picture/coins/CA-Quarter-2009-Olympics-MensIceHockey-Obv.png){:height="6.5%"}|Speed Skating
 2009|![](../picture/coins/CA-Quarter-2009-Olympics-CindyKlassen-Rev.png){:height="6%"}|![](../picture/coins/CA-Quarter-2009-Olympics-CindyKlassen-Obv.png){:height="6%"}|Cindy Klassen
 
-
 ### Natrue
 
 Year| Reverse | Obverse | Theme
 ----|---------|---------|-------
 2011|![](../picture/coins/CA-Quarter-2011-Nature-WoodBison-Rev.png){:height="5.4%"}|![](../picture/coins/CA-Quarter-2011-Nature-WoodBison-Obv.png){:height="5.8%"}|Wood Bison
+
+### Single commemorative designs
+
+Year| Reverse | Obverse | Theme
+----|---------|---------|-------
+2015|![](../picture/coins/CA-Quarter-2015-100thAnniversaryOfTheWritingOfInFlandersField-Rev.png){:height="5.2%"}|![](../picture/coins/CA-Quarter-2015-100thAnniversaryOfTheWritingOfInFlandersField-Obv.png){:height="5.3%"}|100th anniversary of the <br> writing of *In Flanders Field*
+2017|![](../picture/coins/CA-Quarter-2017-Canada150thAnniversary-Rev.png){:height="5.5%"}|![](../picture/coins/CA-Quarter-2017-Canada150thAnniversary-Obv.png){:height="5.5%"}|Canada 150th Anniversary
+2017|![](../picture/coins/CA-Quarter-2017-125thAnniversaryOfTheStanleyCup-Rev.png){:height="5%"}|![](../picture/coins/CA-Quarter-2017-125thAnniversaryOfTheStanleyCup-Obv.png){:height="5.2%"}|125th anniversary af the Stanley Cup
 
 ### Reference 
 
