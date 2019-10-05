@@ -31,6 +31,7 @@ Year| Reverse | Obverse | Theme
 
 
 ### Vancouver Olympics
+
 Year| Reverse | Obverse | Theme
 ----|---------|---------|-------
 2007|![](../picture/coins/CA-Quarter-2007-Olympics-Curling-Rev.png){:height="4.8%"}|![](../picture/coins/CA-Quarter-2007-Olympics-Curling-Obv.png){:height="4.8%"}|Curling
