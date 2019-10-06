@@ -18,6 +18,7 @@ Year| Reverse | Obverse | Theme
 
 Year| Reverse | Obverse | Theme
 ----|---------|---------|-------
+1999|![](../picture/coins/CA-Quarter-1999-Millennium-CanadaThroughAChildsEye-Rev.png){:height="8%"}|![](../picture/coins/CA-Quarter-1999-Millennium-CanadaThroughAChildsEye-Obv.png){:height="8%"}|Canada Through a Child's Eye
 2000|![](../picture/coins/CA-Quarter-2000-Millennium-Pride-Rev.png){:height="5%"}|![](../picture/coins/CA-Quarter-2000-Millennium-Pride-Obv.png){:height="5.6%"}|Pride
 2000|![](../picture/coins/CA-Quarter-2000-Millennium-Freedom-Rev.png){:height="6%"}|![](../picture/coins/CA-Quarter-2000-Millennium-Freedom-Obv.png){:height="6.6%"}|Freedom
 
@@ -27,6 +28,7 @@ Year| Reverse | Obverse | Theme
 Year| Reverse | Obverse | Theme
 ----|---------|---------|-------
 2002|![](../picture/coins/CA-Quarter-2002-CanadianMapleLeaf-Rev.png){:height="5.6%"}|![](../picture/coins/CA-Quarter-2002-CanadianMapleLeaf-Obv.png){:height="4.4%"}|Canadian Maple Leaf
+2004|![](../picture/coins/CA-Quarter-2004-SaintCroixIsland-Rev.png){:height="8%"}|![](../picture/coins/CA-Quarter-2004-SaintCroixIsland-Obv.png){:height="8%"}|Saint Croix Island
 2005|![](../picture/coins/CA-Quarter-2005-Alberta-Rev.png){:height="5%"}|![](../picture/coins/CA-Quarter-2005-Alberta-Obv.png){:height="5.2%"}|Alberta
 
 
@@ -36,6 +38,7 @@ Year| Reverse | Obverse | Theme
 ----|---------|---------|-------
 2007|![](../picture/coins/CA-Quarter-2007-Olympics-Curling-Rev.png){:height="4.8%"}|![](../picture/coins/CA-Quarter-2007-Olympics-Curling-Obv.png){:height="4.8%"}|Curling
 2007|![](../picture/coins/CA-Quarter-2007-Olympics-IceHockey-Rev.png){:height="5%"}|![](../picture/coins/CA-Quarter-2007-Olympics-IceHockey-Obv.png){:height="5.1%"}|Ice Hockey
+2007|![](../picture/coins/CA-Quarter-2007-Olympics-WheelchairCurling-Rev.png){:height="8%"}|![](../picture/coins/CA-Quarter-2007-Olympics-WheelchairCurling-Obv.png){:height="8%"}|Wheelchair Curling
 2007|![](../picture/coins/CA-Quarter-2007-Olympics-AlpineSkiing-Rev.png){:height="5.5%"}|![](../picture/coins/CA-Quarter-2007-Olympics-AlpineSkiing-Obv.png){:height="4.6%"}|Alpine Skiing
 2008|![](../picture/coins/CA-Quarter-2008-Olympics-Snowboarding-Rev.png){:height="6.0%"}|![](../picture/coins/CA-Quarter-2008-Olympics-Snowboarding-Obv.png){:height="6.0%"}|Snowboarding
 2008|![](../picture/coins/CA-Quarter-2008-Olympics-FigureSkating-Rev.png){:height="4.5%"}|![](../picture/coins/CA-Quarter-2008-Olympics-FigureSkating-Obv.png){:height="5%"}|Figure Skating
@@ -52,11 +55,13 @@ Year| Reverse | Obverse | Theme
 Year| Reverse | Obverse | Theme
 ----|---------|---------|-------
 2011|![](../picture/coins/CA-Quarter-2011-Nature-WoodBison-Rev.png){:height="5.4%"}|![](../picture/coins/CA-Quarter-2011-Nature-WoodBison-Obv.png){:height="5.8%"}|Wood Bison
+2011|![](../picture/coins/CA-Quarter-2011-Nature-WoodBisonColourized-Rev.png){:height="8%"}|![](../picture/coins/CA-Quarter-2011-Nature-WoodBisonColourized-Obv.png){:height="8%"}|Wood Bison (colourized)
 
 ### Single commemorative designs
 
 Year| Reverse | Obverse | Theme
 ----|---------|---------|-------
+2013|![](../picture/coins/CA-Quarter-2013-WarOf1812LauraSecond-Rev.png){:height="8%"}|![](../picture/coins/CA-Quarter-2013-WarOf1812LauraSecond-Obv.png){:height="8%"}|War of 1812, Laura Second
 2015|![](../picture/coins/CA-Quarter-2015-100thAnniversaryOfTheWritingOfInFlandersField-Rev.png){:height="5.2%"}|![](../picture/coins/CA-Quarter-2015-100thAnniversaryOfTheWritingOfInFlandersField-Obv.png){:height="5.3%"}|100th anniversary of the <br> writing of *In Flanders Field*
 2017|![](../picture/coins/CA-Quarter-2017-Canada150thAnniversary-Rev.png){:height="5.5%"}|![](../picture/coins/CA-Quarter-2017-Canada150thAnniversary-Obv.png){:height="5.5%"}|Canada 150th Anniversary
 2017|![](../picture/coins/CA-Quarter-2017-125thAnniversaryOfTheStanleyCup-Rev.png){:height="5%"}|![](../picture/coins/CA-Quarter-2017-125thAnniversaryOfTheStanleyCup-Obv.png){:height="5.2%"}|125th anniversary af the Stanley Cup
