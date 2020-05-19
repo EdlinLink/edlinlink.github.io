@@ -262,9 +262,8 @@ ul.posts span {
 /*****************************************************************************/
 
 .site {
-
-	width: 748px;
-    margin:10px auto;
+  width: 61.8%;
+  margin:auto;
   font-size: 100%;
   text-align: justify;
   line-height: 1.5em;
