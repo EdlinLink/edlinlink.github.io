@@ -6,4 +6,4 @@ kramdown:
 highlighter: rouge
 permalink: none
 timezone: CA
-
+encoding: utf-8
