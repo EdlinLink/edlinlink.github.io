@@ -3,12 +3,12 @@ layout: post
 title:  "70. Climbing Stairs"
 date:   2020-09-07 12:00:00
 tags:	leetcode
-myTag:	
+myTag:	leetcode
 headimg: demo.png
 
 ---
 
-### [https://leetcode.com/problems/climbing-stairs/](https://leetcode.com/problems/climbing-stairs/)
+### [70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)
 
 ### Question
 
@@ -42,6 +42,7 @@ Explanation: There are three ways to climb to the top.
 + 1 <= n <= 45
 
 ---
+---
 
 ### Summary
 
@@ -50,14 +51,14 @@ It is a simple DP. There is two ways to climb to stair `n`, 1) from stair `n-1` 
 	climbStairs(n) = climbStairs(n-1) + climbStairs(n-2);
 
 ---
+---
 
 ### Solution
 
-{% highlight cpp linenos %}
-{% raw %}
+```cpp
 class Solution {
 public:
-    map<int,int> memo = {{0,0},{1,1}, {2,2}};
+    map<int,int> memo = { {0,0},{1,1}, {2,2}};
     int climbStairs(int n) {
         if (memo.find(n) != memo.end())
             return memo[n];
@@ -66,7 +67,4 @@ public:
         return memo[n];
     }
 };
-{% endraw %}
-{% endhighlight %}
-
----
+```
