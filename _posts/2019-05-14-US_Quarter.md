@@ -18,17 +18,17 @@ headimg: us_quarter_1967.jpg
 
 Year|-1strelease-|-2ndrelease-|-3rdrelease-|-4threlease-|-5threlease-|-6threlease-
 ----|---|---|---|---|---|---
-1999|Delaware|Pennsylvania|New Jersey|Georgia![Georgia](../picture/coins/US-Quarter-1999-Georgia.png){:height="100px"}{:width="100px"}|Connecticut![Connecticut](../picture/coins/US-Quarter-1999-Connecticut.png){:height="100px"}{:width="100px"}
-2000|Massachusetts![Massachusetts](../picture/coins/US-Quarter-2000-Massachusetts.png){:height="100px"}{:width="100px"}|Maryland![Maryland](../picture/coins/US-Quarter-2000-Maryland.png){:height="100px"}{:width="100px"}|South Carolina|New Hampshire![New Hampshire](../picture/coins/US-Quarter-2000-NewHampshire.png){:height="100px"}{:width="100px"}|Virginia![Virginia](../picture/coins/US-Quarter-2000-Virginia.png){:height="100px"}{:width="100px"}
-2001|New York|North Carolina![North Carolina](../picture/coins/US-Quarter-2001-NorthCarolina.png){:height="100px"}{:width="100px"}|Rhode Island![Rhode Island](../picture/coins/US-Quarter-2001-RhodeIsland.png){:height="100px"}{:width="100px"}|Vermont|Kentucky
+1999|Delaware|Pennsylvania|New Jersey|Georgia![Georgia](/picture/coins/US-Quarter-1999-Georgia.png){:height="100px"}{:width="100px"}|Connecticut![Connecticut](/picture/coins/US-Quarter-1999-Connecticut.png){:height="100px"}{:width="100px"}
+2000|Massachusetts![Massachusetts](/picture/coins/US-Quarter-2000-Massachusetts.png){:height="100px"}{:width="100px"}|Maryland![Maryland](/picture/coins/US-Quarter-2000-Maryland.png){:height="100px"}{:width="100px"}|South Carolina|New Hampshire![New Hampshire](/picture/coins/US-Quarter-2000-NewHampshire.png){:height="100px"}{:width="100px"}|Virginia![Virginia](/picture/coins/US-Quarter-2000-Virginia.png){:height="100px"}{:width="100px"}
+2001|New York|North Carolina![North Carolina](/picture/coins/US-Quarter-2001-NorthCarolina.png){:height="100px"}{:width="100px"}|Rhode Island![Rhode Island](/picture/coins/US-Quarter-2001-RhodeIsland.png){:height="100px"}{:width="100px"}|Vermont|Kentucky
 2002|Tennessee|Ohio|Louisiana|Indiana|Mississippi
-2003|Illinois|Alabama![Alabama](../picture/coins/US-Quarter-2003-Alabama.png){:height="100px"}{:width="100px"}|Maine![Maine](../picture/coins/US-Quarter-2003-Maine.png){:height="100px"}{:width="100px"}|Missouri![Missouri](../picture/coins/US-Quarter-2003-Missouri.png){:height="100px"}{:width="100px"}|Arkansas
-2004|Michigan|Florida|Texas![Texas](../picture/coins/US-Quarter-2004-Texas.png){:height="100px"}{:width="100px"}|Iowa|Wisconsin
-2005|California|Minnesota|Oregon![Oregon](../picture/coins/US-Quarter-2005-Oregon.png){:height="100px"}{:width="100px"}|Kansas|West Virginia
-2006|Nevada|Nebraska![Nebraska](../picture/coins/US-Quarter-2006-Nebraska.png){:height="100px"}{:width="100px"}|Colorado|North Dakota|South Dakota![South Dakota](../picture/coins/US-Quarter-2006-SouthDakota.png){:height="100px"}{:width="100px"}
-2007|Montana|Washington![Washington](../picture/coins/US-Quarter-2007-Washington.png){:height="100px"}{:width="100px"}|Idaho![Idaho](../picture/coins/US-Quarter-2007-Idaho.png){:height="100px"}{:width="100px"}|Wyoming![Wyoming](../picture/coins/US-Quarter-2007-Wyoming.png){:height="100px"}{:width="100px"}|Utah![Utah](../picture/coins/US-Quarter-2007-Utah.png){:height="100px"}{:width="100px"}
-2008|Oklahoma|New Mexico|Arizona![Arizona](../picture/coins/US-Quarter-2008-Arizona.png){:height="100px"}{:width="100px"}|Alaska|Hawaii![Hawaii](../picture/coins/US-Quarter-2008-Hawaii.png){:height="100px"}{:width="100px"}
-2009|District of Columbia|Puerto Rico|Guam|American Samoa|U.S. Virgin Islands![U.S. Virgin Islands](../picture/coins/US-Quarter-2009-VirginIslands.png){:height="100px"}{:width="100px"}|Northern Mariana Islands
+2003|Illinois|Alabama![Alabama](/picture/coins/US-Quarter-2003-Alabama.png){:height="100px"}{:width="100px"}|Maine![Maine](/picture/coins/US-Quarter-2003-Maine.png){:height="100px"}{:width="100px"}|Missouri![Missouri](/picture/coins/US-Quarter-2003-Missouri.png){:height="100px"}{:width="100px"}|Arkansas
+2004|Michigan|Florida|Texas![Texas](/picture/coins/US-Quarter-2004-Texas.png){:height="100px"}{:width="100px"}|Iowa|Wisconsin
+2005|California|Minnesota|Oregon![Oregon](/picture/coins/US-Quarter-2005-Oregon.png){:height="100px"}{:width="100px"}|Kansas|West Virginia
+2006|Nevada|Nebraska![Nebraska](/picture/coins/US-Quarter-2006-Nebraska.png){:height="100px"}{:width="100px"}|Colorado|North Dakota|South Dakota![South Dakota](/picture/coins/US-Quarter-2006-SouthDakota.png){:height="100px"}{:width="100px"}
+2007|Montana|Washington![Washington](/picture/coins/US-Quarter-2007-Washington.png){:height="100px"}{:width="100px"}|Idaho![Idaho](/picture/coins/US-Quarter-2007-Idaho.png){:height="100px"}{:width="100px"}|Wyoming![Wyoming](/picture/coins/US-Quarter-2007-Wyoming.png){:height="100px"}{:width="100px"}|Utah![Utah](/picture/coins/US-Quarter-2007-Utah.png){:height="100px"}{:width="100px"}
+2008|Oklahoma|New Mexico|Arizona![Arizona](/picture/coins/US-Quarter-2008-Arizona.png){:height="100px"}{:width="100px"}|Alaska|Hawaii![Hawaii](/picture/coins/US-Quarter-2008-Hawaii.png){:height="100px"}{:width="100px"}
+2009|District of Columbia|Puerto Rico|Guam|American Samoa|U.S. Virgin Islands![U.S. Virgin Islands](/picture/coins/US-Quarter-2009-VirginIslands.png){:height="100px"}{:width="100px"}|Northern Mariana Islands
 
 
 ### Reference 

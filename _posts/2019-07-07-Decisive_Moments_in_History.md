@@ -10,7 +10,7 @@ headimg: milkyway.jpg
 
 ### 《人类群星闪耀时》
 
-![](../picture/Ren_Lei_Qun_Xing_Shan_Yao_Shi.jpg){:height="400px"} | [奥] 茨维格<br> 国际文化出版公司<br> 9787512508361<br>☆☆☆☆
+![](/picture/Ren_Lei_Qun_Xing_Shan_Yao_Shi.jpg){:height="400px"} | [奥] 茨维格<br> 国际文化出版公司<br> 9787512508361<br>☆☆☆☆
 
 
 ### Inspiration
