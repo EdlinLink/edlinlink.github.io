@@ -124,6 +124,46 @@ dd{margin-left:2em;margin-bottom:1em;}
 @media screen and (min-width: 768px) {
 }
 
+
+/*****************************************************************************/
+/*
+/* Navigation Bar
+/*
+/*****************************************************************************/
+.navigation {
+	text-align:center;	
+    background: #FAFAFA;
+	
+}
+
+.navigation ul {
+    list-style-type: none;			/*	Do not show the `dot` between the element */
+	display:inline-block;			
+    #margin: 0;
+    #padding: 0;
+}
+
+.navigation li{
+	float: left						/*	Make the element float in one line	*/
+}
+
+.navigation a:visited{
+	color:#000000;					/*	set text color to be black, defult is navy blue link color	*/
+}
+
+.navigation a:link {
+	display:block;					/*	set elements to be block	*/
+	width: 500px;					/*	set text width, othervise all blocks will be together		*/
+	text-align:center;				/*	set text to be center		*/
+	text-transform:uppercase;		/*	set text to be uppercase	*/
+	line-height:0;					/*	set the height of line smaller	*/
+}
+
+.navigation a:hover, a:active
+{
+	text-decoration:underline;		/*	set the text with underline */
+}
+
 /*****************************************************************************/
 /*
 /* Header && Footer
@@ -131,24 +171,16 @@ dd{margin-left:2em;margin-bottom:1em;}
 /*****************************************************************************/
 
 
+
+.clear {
+	clear: both;
+}
+
 .header{
 	position: relative;
 }
 
 .headimg{
-}
-
-.navigation{
-	position:absolute;
-	top: 5%;
-	right: 5%;
-	text-decoration:bold;
-}
-
-.navigation a{
-	font-size: 100%;
-	color:#000000;
-	margin-right:10px;
 }
 
 

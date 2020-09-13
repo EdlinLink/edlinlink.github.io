@@ -6,57 +6,53 @@
         <title>{{ page.title }}</title>
         <meta name="viewport" content="width=device-width">
 
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
-
         <!-- Custom CSS -->
         <link rel="stylesheet" href="/css/main.css">
-		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
 
-        <!-- highlight code  CSS -->
-        <link rel="stylesheet" href="/css/pygments.css">
-        <link rel="stylesheet" href="/css/linenos.css">
+        <!-- line number for code block -->
+        <script src="/js/prism.js"></script>
+        <link rel="stylesheet" href="/css/prism.css">
 
-		<!-- MathJax-->
-		<script type="text/javascript"
-		   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     </head>
 
     <body >
 
-		<div class="header">
-	    	<div class="navigation">
-				<br>
-				<a href="/tech.html">Tech</a>
-				<a href="/life.html">Life</a>
-				<a href="/about.html">About</a>
-			</div>
-			
-			<div class="headimg">
-				<a href="/"><img src=../picture/{{ page.headimg }} width="100%" ></a>
-			</div>
+        <div class="header">
+            <div class="navigation">
+                <ul>
+                   <li><a href="/tech.html">Tech</a></li>
+                   <li><a href="/life.html">Life</a></li>
+                   <li><a href="/about.html">About</a></li>
+                </ul>
+            </div>
 
-			<div class="clear">
-			</div>
-		</div>
+            <hr>
+			<div class="clear"></div>
+            
+            <div class="headimg">
+                <a href="/"><img src=../picture/{{ page.headimg }} width="100%" ></a>
+            </div>
+
+            <div class="clear">
+            </div>
+        </div>
 
 
         <div class="site">
           {{ content }}
-		</div>
-
-
-		<div class="footer">
-			<a href="mailto:edlinlink@qq.com">
-				<img src="../picture/email.png">
-			</a>
-			<p class="copyright">
-				Copyright © Junhao Lin 2020
-				<br>
-				<iframe style="margin-left: 2px; margin-bottom:-5px;" frameborder="0" scrolling="0" width="91px" height="20px" src="https://ghbtns.com/github-btn.html?user=edlinlink&repo=edlinlink.github.io&type=star&count=true" /iframe>
-			</p>
         </div>
 
 
+        <div class="footer">
+            <a href="mailto:edlinlink@qq.com">
+                <img src="../picture/email.png">
+            </a>
+            <p class="copyright">
+                Copyright © Junhao Lin 2020
+                <br>
+                <iframe style="margin-left: 2px; margin-bottom:-5px;" frameborder="0" scrolling="0" width="91px" height="20px" src="https://ghbtns.com/github-btn.html?user=edlinlink&repo=edlinlink.github.io&type=star&count=true" /iframe>
+            </p>
+        </div>
     </body>
 </html>

@@ -6,38 +6,33 @@
         <title>{{ page.title }}</title>
         <meta name="viewport" content="width=device-width">
 
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
-
         <!-- Custom CSS -->
         <link rel="stylesheet" href="/css/main.css">
 		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
 
         <!-- highlight code  CSS -->
-        <link rel="stylesheet" href="/css/pygments.css">
-
-		<!-- MathJax-->
-		<script type="text/javascript"
-		   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="/js/prism.js"></script>
+        <link rel="stylesheet" href="/css/prism.css">
 
     </head>
+
     <body >
-		<div class="header">
-			<div class="headimg">
-				<a href="/"><img src=../picture/{{ page.headimg }} width="100%" ></a>
-			</div>
 
-	    	<div class="navigation">
-				<br>
-				<a class="extra" href="/tech.html">TECH</a>
-				<a class="extra" href="/life.html">LIFE</a>
-				<a class="extra" href="/about.html">ABOUT</a>
-			</div>
-			
-			<div class="clear">
-			</div>
-		</div>
+        <div class="header">
+            <div class="navigation">
+                <ul>
+                   <li><a href="/tech.html">Tech</a></li>
+                   <li><a href="/life.html">Life</a></li>
+                   <li><a href="/about.html">About</a></li>
+                </ul>
+            </div>
 
+            <hr>
+			<div class="clear"></div>
+            
+            <div class="headimg">
+                <a href="/"><img src=../picture/{{ page.headimg }} width="100%" ></a>
+            </div>
 
         <div class="site">
           {{ content }}
