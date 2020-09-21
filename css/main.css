@@ -132,20 +132,22 @@ dd{margin-left:2em;margin-bottom:1em;}
 /*****************************************************************************/
 .navigation {
     text-align:center;    
-    background: #FAFAFA;
+    margin:0;                       /*  margin of ul box    */
+    padding:0;                      /*  padding of ul box   */
 }
 
 .navigation ul {
     list-style-type: none;          /*  Do not show the `dot` between the element */
     display:block;                  /*  each element will be one block default occupy one line  */
-    margin:0;                       /*  margin of ul box    */
-    padding:0;                      /*  padding of ul box   */
+    margin:0em;                     /*  margin of ul box    */
+    padding:0em 0em 2em 0em;        /*  padding of ul box   */
+    background: #FAFAFA;            /*  set color to be light gray  */
 }
 
 .navigation li{
-    float: left;                    /*    Make the element float in one line    */
+    float: left;                    /*  Make the element float in one line    */
     display:block;                  /*  each element will be one block, default occupy one line */
-    width: 33.3%                    /*  each element occupy 1/3 line    */
+    width: 33.3%;                   /*  each element occupy 1/3 line    */
 }
 
 .navigation a {
@@ -173,6 +175,7 @@ dd{margin-left:2em;margin-bottom:1em;}
 .clear {
     clear: both;
 }
+
 
 .header{
     position: relative;
