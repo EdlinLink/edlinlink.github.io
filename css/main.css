@@ -154,9 +154,6 @@ dd{margin-left:2em;margin-bottom:1em;}
 .navigation a {
     display:block;                  
     text-transform:uppercase;       /*    set text to be uppercase    */
-}
-
-.navigation a:visited{
     color:#000000;                  /*    set text color to be black, defult is navy blue link color    */
 }
 
