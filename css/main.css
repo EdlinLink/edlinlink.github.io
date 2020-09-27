@@ -134,6 +134,7 @@ dd{margin-left:2em;margin-bottom:1em;}
     text-align:center;    
     margin:0;                       /*  margin of ul box    */
     padding:0;                      /*  padding of ul box   */
+    position: relative;
 }
 
 .navigation ul {
@@ -163,6 +164,27 @@ dd{margin-left:2em;margin-bottom:1em;}
 {
     text-decoration:underline;      /*    set the text with underline */
 }
+
+.dropdown li {
+    width:100%;                     /*  use full width of one of navigation columns */ 
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;                 /*  when hover over dropdown, dropdown-content display  */
+    padding: 1em 0 0 0;             /*  dropdown-content padding from navigation bar        */
+    position:absolute;              /*  no occupy below content size when show up           */
+    width: 33.3%
+}
+
+.dropdown-content{
+    display: none;                  /*  dropdown-content no show as default                 */
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1       /*  set deep gray when hover over the dropdown-content  */
+}
+
+
 
 /*****************************************************************************/
 /*
