@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "剪去三千烦恼丝，化做自得一微尘"
-date:   2020-10-09 21:41:00
+date:   2020-10-10 21:41:00
 tags:	life
 myTag:	
 headimg: demo.png
